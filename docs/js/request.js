@@ -1,5 +1,9 @@
 let clientLoaded = false;
 
+let channelGroups = {
+    "hololive": "UCJFZiqLMntJufDCHc6bQixg"
+}
+
 // Load the client using the VTuber Hub API key
 function loadClient() {
     gapi.client.setApiKey("AIzaSyCFu0BauHWi5NwREhbsrlJj1DaZd8nejjk");
@@ -12,10 +16,10 @@ function loadClient() {
 }
 
 // Get hololive's featured channels and refresh the channel-list div
-async function loadChannels() {
+async function loadChannels(key) {
     if (!clientLoaded) return;
 
-    let featuredChannels = await getFeaturedChannels("UCJFZiqLMntJufDCHc6bQixg");
+    let featuredChannels = await getFeaturedChannels(channelGroups[key]);
 
     if (channels.length > 0) {
         channels = [];

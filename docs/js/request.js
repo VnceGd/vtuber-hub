@@ -1,9 +1,5 @@
 let clientLoaded = false;
 
-let vtuberGroups = {
-    "hololive": "UCJFZiqLMntJufDCHc6bQixg"
-}
-
 // Load the client using the VTuber Hub API key
 function loadClient() {
     gapi.client.setApiKey("AIzaSyCFu0BauHWi5NwREhbsrlJj1DaZd8nejjk");
@@ -18,29 +14,43 @@ function loadClient() {
 // Get hololive's featured channels and refresh the channel-list div
 async function loadChannels(key) {
     if (!clientLoaded) return;
+    
+    let featuredChannels = await getFeaturedChannels(key);
 
-    let featuredChannels = await getFeaturedChannels(vtuberGroups[key]);
+    let channelsIndex = 0;
+    switch (key) {
+        case vtuberGroups.HOLOLIVE:
+            channelsIndex = 0;
+        case vtuberGroups.HOLOLIVE_ID:
+            channelsIndex = 1;
+        case vtuberGroups.HOLOSTARS:
+            channelsIndex = 2;
+    }
 
-    if (channels.length > 0) {
-        channels = [];
+    if (channels[channelsIndex].length > 0) {
+        channels[channelsIndex] = [];
         refreshList();
     }
 
     for (let i = 0; i < featuredChannels.length; i++) {
         let channelInfo = await getChannelSnippet(featuredChannels[i]);
-        channels.push([featuredChannels[i], channelInfo[0], channelInfo[1]]);
-        populateList(i);
+        channels[channelsIndex].push([featuredChannels[i], channelInfo[0], channelInfo[1]]);
+        populateList(channelsIndex, i);
     }
+
+    console.log(channels[channelsIndex]);
 }
 
 // Retrieve the featured channels of the channel specified by id
 function getFeaturedChannels(id) {
     if (!clientLoaded) return;
 
+    console.log(`id = ${id}`);
     return new Promise(resolve => {
         gapi.client.youtube.channels.list({
             "part": [
-                "brandingSettings"
+                "brandingSettings",
+                "id"
             ],
             "id": [
                 id
@@ -48,7 +58,7 @@ function getFeaturedChannels(id) {
         })
         .then(function(response) {
                 // Handle the results here (response.result has the parsed body).
-                // console.log("Response", response);
+                console.log("Response", response);
                 resolve(response.result.items[0].brandingSettings.channel.featuredChannelsUrls);
             },
             function(err) { console.error("Execute error", err); });

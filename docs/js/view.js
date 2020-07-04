@@ -170,7 +170,7 @@ function populateList(id) {
                     <div class="channel-icon">
                         <img src="${channels[id][channelIcon]}" alt="${nameString}-thumbnail"/>
                     </div>
-                    <div id="live-${id}" class="live-indicator">LIVE</div>
+                    <!--<div id="live-${id}" class="live-indicator">LIVE</div>-->
                     <!--<button onclick="getLivestreamStatus(${channels[id][channelId]})">Refresh</button>-->
                     <div class="channel-title">
                         <h2>${nameString}</h2>

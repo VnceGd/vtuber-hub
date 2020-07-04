@@ -89,7 +89,6 @@ h1 img {
     top: 50%;
     left: 50%;
     position: absolute;
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     box-sizing: border-box;
 }
@@ -119,23 +118,24 @@ h1 img {
     float: none;
 }
 .channel-list .list .channel-content {
-    padding: 0;
+    padding: 1rem;
     top: 0;
     left: 0;
+    display: flex;
+    align-items: center;
     position: relative;
-    -ms-transform: translate(0);
     transform: translate(0);
 }
 .channel-list .list .channel-icon {
     float: left;
 }
 .channel-list .list .channel-icon img {
-    margin: 1.25rem 1rem 0 1rem;
+    margin: 0 1rem 0 0;
     height: 6rem;
 }
 .channel-list .list .channel-title {
     width: auto;
 }
 .channel-list .list .live-indicator {
-    margin-top: 1rem;
+    margin-right: 1rem;
 }

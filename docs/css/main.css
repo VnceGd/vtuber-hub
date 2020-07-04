@@ -90,6 +90,9 @@ nav h1 {
 .vtuber-group {
     overflow: auto;
 }
+.vtuber-group h1 {
+    display: inline-block;
+}
 
 .channel-box {
     margin: 0 1rem 1rem 0;

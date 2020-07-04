@@ -1,6 +1,6 @@
 let clientLoaded = false;
 
-let channelGroups = {
+let vtuberGroups = {
     "hololive": "UCJFZiqLMntJufDCHc6bQixg"
 }
 
@@ -19,7 +19,7 @@ function loadClient() {
 async function loadChannels(key) {
     if (!clientLoaded) return;
 
-    let featuredChannels = await getFeaturedChannels(channelGroups[key]);
+    let featuredChannels = await getFeaturedChannels(vtuberGroups[key]);
 
     if (channels.length > 0) {
         channels = [];

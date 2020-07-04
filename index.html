@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="utf-8">
+
+    <title>VTuber Hub</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="view.js" defer></script>
+
+    <script src="https://apis.google.com/js/api.js" defer></script>
+    <script src="request.js"defer></script>
+</head>
+<html style="font-size: 10px;font-family: Roboto, Arial, sans-serif;">
+    <body>
+        <div>
+            <h1>VTuber Hub</h1>
+            <h1>
+                <img src="https://yt3.ggpht.com/a/AATXAJzjWwRdmmhGzuq3bVs7whSPX3piTL7dDR-2Eah0nQ=s288-c-k-c0xffffffff-no-rj-mo" alt="hololive-thumbnail"/>
+                hololive ホロライブ
+                <div class="view">
+                    <a id="grid-view" href="#">List View</a>
+                    <a id="list-view" href="#">Grid View</a>
+                </div>
+            </h1>
+            <!-- <button onclick="loadChannels()">Load Channels</button> -->
+            <div class="channel-list">
+                <ul>
+                    <!-- Populated by populateList(id) in view.js -->
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

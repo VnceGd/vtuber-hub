@@ -27,6 +27,10 @@
     }
 }
 
+html {
+    font-size: 12px;
+    font-family: Roboto, Arial, sans-serif;
+}
 body {
     margin: 0;
     color: var(--text-col);
@@ -49,44 +53,40 @@ ul {
 }
 h1 img {
     margin-right: 1rem;
-    height: 6rem;
+    height: 4rem;
     vertical-align: middle;
     border-radius: 50%;
 }
 nav {
     margin: 0;
-    padding: 2rem;
+    padding: 1rem 2rem;
     top: 0;
     position: fixed;
     width: 100%;
-    height: 8rem;
+    min-height: 6rem;
     background: var(--fg-col);
     box-sizing: border-box;
+    overflow: auto;
     z-index: 99;
 }
 nav h1 {
     margin: 0;
 }
 nav h1 img {
-    height: 4rem;
+    height: 3.5rem;
+}
+#title {
+    margin-right: 1rem;
 }
 #searchInput {
-    margin-left: 1rem;
     padding: 1rem;
     color: var(--text-col);
     background: var(--root-col);
     border: 0;
 }
-
-.container {
-    margin: 1rem 2rem;
-    padding-top: 8rem;
-}
-
 .view {
-    margin-left: 1rem;
+    margin-right: 1rem;
     display: inline-block;
-    font-size: 1.5rem;
     vertical-align: middle;
 }
 .view a {
@@ -112,6 +112,11 @@ nav h1 img {
     display: block;
 }
 
+.container {
+    margin: 1rem 2rem;
+    padding-top: 6rem;
+}
+
 .vtuber-group {
     overflow: auto;
 }
@@ -121,8 +126,8 @@ nav h1 img {
 
 .channel-box {
     margin: 0 1rem 1rem 0;
-    width: 23.8rem;
-    height: 23.8rem;
+    width: 19.5rem;
+    height: 19.5rem;
     display: flex;
     position: relative;
     text-align: center;
@@ -137,7 +142,7 @@ nav h1 img {
     background: var(--btn-hov-col);
 }
 .channel-content {
-    padding: 2rem;
+    padding: 1rem;
     width: 100%;
     top: 50%;
     left: 50%;
@@ -147,7 +152,7 @@ nav h1 img {
 }
 .channel-icon img {
     margin-bottom: 1rem;
-    height: 10rem;
+    height: 8rem;
     border-radius: 50%;
 }
 .live-indicator {
@@ -184,7 +189,7 @@ nav h1 img {
 }
 .channel-list .list .channel-icon img {
     margin: 0 1rem 0 0;
-    height: 6rem;
+    height: 4rem;
 }
 .channel-list .list .channel-title {
     width: auto;
@@ -194,7 +199,7 @@ nav h1 img {
 }
 
 footer {
-    padding: 2rem;
+    padding: 1.5rem;
     width: 100%;
     text-align: center;
     color: var(--text-blend-col);

@@ -1,4 +1,4 @@
-const MAX_LENGTH_GRID = 16;
+const MAX_LENGTH_GRID = 18;
 const MAX_LENGTH_LIST = 100;
 
 const vtuberGroups = {
@@ -247,7 +247,7 @@ function populateList(list, id) {
 
     let channelBoxTemplate = `
         <li class="channel-box">
-            <a href="https://www.youtube.com/channel/${channels[list][id][channelId]}" target="_blank">
+            <a href="https://www.youtube.com/channel/${channels[list][id][channelId]}" target="_blank" rel="noopener">
                 <div class="channel-content">
                     <div class="channel-icon">
                         <img src="${channels[list][id][channelIcon]}" alt="${nameString}-thumbnail"/>
@@ -255,7 +255,7 @@ function populateList(list, id) {
                     <!--<div id="live-${id}" class="live-indicator">LIVE</div>-->
                     <!--<button onclick="getLivestreamStatus(${channels[list][id][channelId]})">Refresh</button>-->
                     <div class="channel-title">
-                        <h2>${nameString}</h2>
+                        <h3>${nameString}</h3>
                     </div>
                 </div>
             </a>

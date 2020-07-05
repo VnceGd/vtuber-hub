@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<head lang="en">
-    <meta charset="utf-8">
-
-    <title>VTuber Hub</title>
-
-    <link rel="icon" href="img/favicon.svg">
-    <link rel="stylesheet" href="css/main.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
-    <script src="js/view.js" defer></script>
-    <script src="js/search.js" defer></script>
-
-    <script src="https://apis.google.com/js/api.js" defer></script>
-    <script src="js/request.js" defer></script>
-</head>
-<html style="font-size: 10px;font-family: Roboto, Arial, sans-serif;">
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="VTuber Hub">
+        <meta name="keywords" content="Virtual YouTuber, VTuber, Hololive, YouTube API">
+        <meta name="author" content="Vincent Nguyen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>VTuber Hub</title>
+    
+        <link rel="icon" href="img/favicon.svg">
+        <link rel="stylesheet" href="css/main.css">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+        <script src="js/view.js" defer></script>
+        <script src="js/search.js" defer></script>
+    
+        <script src="https://apis.google.com/js/api.js" defer></script>
+        <script src="js/request.js" defer></script>
+    </head>
     <body>
         <nav>
             <h1>
-                <a href="">
+                <a id="title" href="">
                     <img src="img/favicon.svg" alt="VTuber Hub Logo"/>
                     VTuber Hub
                 </a>
@@ -46,12 +50,12 @@
                         </svg>
                     </a>
                 </div>
-                <input type="text" id="searchInput" onkeyup="searchLists()" placeholder="Search">
+                <input type="text" id="searchInput" onkeyup="searchLists()" placeholder="Search" aria-label="Search">
             </h1>
         </nav>
         <div class="container">
             <div class="vtuber-group">
-                <a href="https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg" target="_blank">
+                <a href="https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg" target="_blank" rel="noopener">
                     <h1>
                         <img src="https://yt3.ggpht.com/a/AATXAJzjWwRdmmhGzuq3bVs7whSPX3piTL7dDR-2Eah0nQ=s288-c-k-c0xffffffff-no-rj-mo" alt="hololive-thumbnail"/>
                         hololive (ホロライブ)
@@ -65,7 +69,7 @@
                 </div>
             </div>
             <div class="vtuber-group">
-                <a href="https://www.youtube.com/channel/UCfrWoRGlawPQDQxxeIDRP0Q" target="_blank">
+                <a href="https://www.youtube.com/channel/UCfrWoRGlawPQDQxxeIDRP0Q" target="_blank" rel="noopener">
                     <h1>
                         <img src="https://yt3.ggpht.com/a/AATXAJy_etNXRipQSwEIMrTrZfFPh0hfpp2BPhbNxZ1O=s288-c-k-c0xffffffff-no-rj-mo" alt="hololive_id-thumbnail"/>
                         hololive Indonesia
@@ -79,7 +83,7 @@
                 </div>
             </div>
             <div class="vtuber-group">
-                <a href="https://www.youtube.com/channel/UCWsfcksUUpoEvhia0_ut0bA" target="_blank">
+                <a href="https://www.youtube.com/channel/UCWsfcksUUpoEvhia0_ut0bA" target="_blank" rel="noopener">
                     <h1>
                         <img src="https://yt3.ggpht.com/a/AATXAJx7UXk-MNOlacftL_vddK2Bqk1KleKEKrBUp28=s288-c-k-c0xffffffff-no-rj-mo" alt="holostars-thumbnail"/>
                         holostars (ホロスターズ公式)
@@ -95,8 +99,8 @@
         </div>
         <footer>
             <a href="https://github.com/VnceGd/vtuber-hub">
-                <img id="github-mark-dark" src="img/github-dark.png"/>
-                <img id="github-mark-light" src="img/github-light.png"/>
+                <img id="github-mark-dark" src="img/github-dark.png" alt="Github Logo"/>
+                <img id="github-mark-light" src="img/github-light.png" alt="Github Logo"/>
             </a>
             <p>(c) 2020 VnceGd <a href="https://github.com/VnceGd/vtuber-hub/blob/master/LICENSE"> MIT License</a></p>
         </footer>

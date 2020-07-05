@@ -1,0 +1,28 @@
+:root {
+    --root-col: #000;
+    --bg-col: #1a1a1a;
+    --fg-col: #2a2a2a;
+    --text-col: #fff;
+    --text-blend-col: #bbb;
+    --btn-col: #3a3a3a;
+    --btn-hov-col: #4a4a4a;
+}
+
+@media screen and (prefers-color-scheme: light) {
+    :root {
+        --root-col: #fff;
+        --bg-col: #fafafa;
+        --fg-col: #eaeaea;
+        --text-col: #000;
+        --text-blend-col: #555;
+        --btn-col: #dadada;
+        --btn-hov-col: #cacaca;
+    }
+
+    #github-mark-dark {
+        display: inline-block;
+    }
+    #github-mark-light {
+        display: none;
+    }
+}

@@ -1,0 +1,25 @@
+@media screen and (min-width: 540px) {
+    #searchInput {
+        width: auto;
+    }
+
+    .channel-box {
+        margin: 0 1vw 1vw 0;
+        width: 43vw;
+        height: 43vw;
+    }
+    .channel-icon img {
+        height: 10vw;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .channel-box {
+        margin: 0 .5rem .5rem 0;
+        width: 20rem;
+        height: 20rem;
+    }
+    .channel-icon img {
+        height: 8rem;
+    }
+}

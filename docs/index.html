@@ -18,11 +18,33 @@
     <body>
         <nav>
             <h1>
-                <img src="img/favicon.svg"/>
-                VTuber Hub
+                <a href="">
+                    <img src="img/favicon.svg" alt="VTuber Hub Logo"/>
+                    VTuber Hub
+                </a>
                 <div class="view">
-                    <a id="grid-view" href="#">List View</a>
-                    <a id="list-view" href="#">Grid View</a>
+                    <a id="grid-view">
+                        <svg viewBox="0 0 1 1" aria-label="listview-icon">
+                            <g fill="var(--text-col)">
+                                <rect width="10%" height="20%"/>
+                                <rect x="20%" width="80%" height="20%"/>
+                                <rect y="40%" width="10%" height="20%"/>
+                                <rect x="20%" y="40%" width="80%" height="20%"/>
+                                <rect y="80%" width="10%" height="20%"/>
+                                <rect x="20%" y="80%" width="80%" height="20%"/>
+                            </g>
+                        </svg>
+                    </a>
+                    <a id="list-view">
+                        <svg viewBox="0 0 1 1" aria-label="gridview-icon">
+                            <g fill="var(--text-col)">
+                                <rect width="40%" height="40%"/>
+                                <rect x="60%" width="40%" height="40%"/>
+                                <rect y="60%" width="40%" height="40%"/>
+                                <rect x="60%" y="60%" width="40%" height="40%"/>
+                            </g>
+                        </svg>
+                    </a>
                 </div>
                 <input type="text" id="searchInput" onkeyup="searchLists()" placeholder="Search">
             </h1>

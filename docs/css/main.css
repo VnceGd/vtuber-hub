@@ -71,17 +71,21 @@ nav h1 img {
 
 .container {
     margin: 1rem 2rem;
-    padding-top: 7rem;
+    padding-top: 8rem;
 }
 
 .view {
     margin-left: 1rem;
     display: inline-block;
     font-size: 1.5rem;
+    vertical-align: middle;
 }
 .view a {
+    width: 1.5rem;
+    height: 1.5rem;
     padding: 1rem;
     background: var(--btn-col);
+    cursor: pointer;
 }
 .view a:hover {
     background: var(--btn-hov-col);

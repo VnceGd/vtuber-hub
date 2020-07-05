@@ -14,7 +14,7 @@ let channelId = 0;
 let channelIcon = 1;
 let channelName = 2;
 
-// Channel info gathered from loadChannels() in request.js
+// Channel info gathered from loadChannels(key) in request.js
 let channels = [
     [ // hololive Japan
         [

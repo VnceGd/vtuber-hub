@@ -11,7 +11,7 @@ function loadClient() {
             function(err) { console.error("Error loading GAPI client for API", err); });
 }
 
-// Get hololive's featured channels and refresh the channel-list div
+// Get featured channels from the channel specified by key and refresh the corresponding channel-list div
 async function loadChannels(key) {
     if (!clientLoaded) return;
     

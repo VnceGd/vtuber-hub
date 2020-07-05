@@ -21,10 +21,13 @@ async function loadChannels(key) {
     switch (key) {
         case vtuberGroups.HOLOLIVE:
             channelsIndex = 0;
+            break;
         case vtuberGroups.HOLOLIVE_ID:
             channelsIndex = 1;
+            break;
         case vtuberGroups.HOLOSTARS:
             channelsIndex = 2;
+            break;
     }
 
     if (channels[channelsIndex].length > 0) {
@@ -45,12 +48,10 @@ async function loadChannels(key) {
 function getFeaturedChannels(id) {
     if (!clientLoaded) return;
 
-    console.log(`id = ${id}`);
     return new Promise(resolve => {
         gapi.client.youtube.channels.list({
             "part": [
-                "brandingSettings",
-                "id"
+                "brandingSettings"
             ],
             "id": [
                 id

@@ -118,4 +118,4 @@ function getLivestreamStatus(id) {
         function(err) { console.error("Execute error", err); });
 }
 
-gapi.load("client", loadClient);
+// gapi.load("client", loadClient);

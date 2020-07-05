@@ -3,6 +3,7 @@
     --bg-col: #1a1a1a;
     --fg-col: #2a2a2a;
     --text-col: #fff;
+    --text-blend-col: #bbb;
     --btn-col: #3a3a3a;
     --btn-hov-col: #4a4a4a;
 }
@@ -13,8 +14,16 @@
         --bg-col: #fafafa;
         --fg-col: #eaeaea;
         --text-col: #000;
+        --text-blend-col: #555;
         --btn-col: #dadada;
         --btn-hov-col: #cacaca;
+    }
+
+    #github-mark-dark {
+        display: inline-block;
+    }
+    #github-mark-light {
+        display: none;
     }
 }
 
@@ -182,4 +191,20 @@ nav h1 img {
 }
 .channel-list .list .live-indicator {
     margin-right: 1rem;
+}
+
+footer {
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    color: var(--text-blend-col);
+    background: var(--root-col);
+    box-sizing: border-box;
+}
+
+#github-mark-dark {
+    display: none;
+}
+#github-mark-light {
+    display: inline-block;
 }

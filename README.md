@@ -18,4 +18,4 @@ The `community` folder contains resources not included in the website, in the fo
 
 ### [License](LICENSE)
 
-This project is licensed under the [MIT License](https://mit-license.org/).
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/).

@@ -155,6 +155,9 @@ nav h1 img {
     height: 8rem;
     border-radius: 50%;
 }
+.search-term {
+    display: none;
+}
 .live-indicator {
     padding: .5rem 2rem;
     color: #555;

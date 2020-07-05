@@ -2,7 +2,7 @@ let clientLoaded = false;
 
 // Load the client using the VTuber Hub API key
 function loadClient() {
-    gapi.client.setApiKey("AIzaSyCFu0BauHWi5NwREhbsrlJj1DaZd8nejjk");
+    gapi.client.setApiKey(YT_DATA_API_KEY);
     return gapi.client.load("https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest")
         .then(function() {
             console.log("GAPI client loaded for API"); 

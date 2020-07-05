@@ -1,6 +1,6 @@
 # Translation Channels (English)
 
-A list of translation channels found via YouTube search for "#vtuberen" on July 4, 2020.
+A list of translation channels found via YouTube search for "[#vtuberen](https://www.youtube.com/results?search_query=%23vtuberen)" on July 4, 2020.
 
 * [aSnufulufagus](https://www.youtube.com/user/aSnufulufagus)
 

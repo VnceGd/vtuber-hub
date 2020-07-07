@@ -37,6 +37,8 @@ nav {
     width: 100%;
     min-height: 6rem;
     background: var(--fg-col);
+    display: flex;
+    align-items: center;
     box-sizing: border-box;
     overflow: auto;
     z-index: 99;
@@ -175,12 +177,15 @@ nav h1 img {
 }
 
 footer {
-    padding: 1.5rem;
+    padding: 1rem;
     width: 100%;
     text-align: center;
     color: var(--text-blend-col);
     background: var(--root-col);
     box-sizing: border-box;
+}
+footer .container {
+    padding: 0;
 }
 
 #github-mark-dark {

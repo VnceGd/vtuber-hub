@@ -19,7 +19,7 @@ function populateList(list, id) {
     let channelBoxTemplate = `
         <li class="channel-box">
             <a href="https://www.youtube.com/channel/${ytId}" target="_blank" rel="noopener">
-                <span class="search-term">${fullName}</span>
+                <span class="search-term">${fullName} </span>
                 <div class="channel-content">
                     <div class="channel-icon">
                         <img src="${channels[list][id][channelIcon]}" alt="${fullName}-thumbnail"/>
@@ -37,15 +37,16 @@ function populateList(list, id) {
     let stringId = ""
     switch (list) {
         case 0:
-            stringId = "hololive-list";
+            stringId = "hololive";
             break;
         case 1:
-            stringId = "hololive_id-list";
+            stringId = "hololive_id";
             break;
         case 2:
-            stringId = "holostars-list";
+            stringId = "holostars";
             break;
     }
+    stringId += "-list";
 
     $(`#${stringId} ul`).append(channelBoxTemplate);
 }

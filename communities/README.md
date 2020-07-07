@@ -1,4 +1,4 @@
-# Community
+# Communities
 
 A compilation of online communities and resources dedicated to Virtual YouTubers (VTubers).
 

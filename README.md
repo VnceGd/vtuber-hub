@@ -12,9 +12,9 @@ Since hololive and holostars channels have featured channels showcasing their me
 * [hololive Indonesia](https://www.youtube.com/channel/UCfrWoRGlawPQDQxxeIDRP0Q)
 * [holostars](https://www.youtube.com/channel/UCWsfcksUUpoEvhia0_ut0bA)
 
-## [Community](community)
+## [Communities](communities)
 
-The `community` folder contains resources not included in the website, in the form of Markdown documents.
+The `communities` folder contains resources not included in the website, in the form of Markdown documents.
 
 ### [License](LICENSE)
 

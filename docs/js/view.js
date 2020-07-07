@@ -63,7 +63,7 @@ function populateList(list, id) {
                     </div>
                     <!--<div id="live-${id}" class="live-indicator">LIVE</div>-->
                     <div class="channel-title">
-                        <h3>${nameString}</h3>
+                        <h3 class="tooltip">${nameString}<span class="tooltip-text">${localizedName}</span></h3>
                     </div>
                 </div>
             </a>

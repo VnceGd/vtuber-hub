@@ -133,6 +133,34 @@ nav h1 img {
 .search-term {
     display: none;
 }
+.tooltip {
+    display: inline-block;
+    position: relative;
+}
+.tooltip-text {
+    margin: 1rem 0 0 -7rem;
+    padding: .5rem 1rem;
+    width: 12rem;
+    top: 100%;
+    left: 50%;
+    background: var(--bg-col);
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    border-radius: 1rem;
+    opacity: 0;
+    transition: opacity .2s;
+}
+.list .tooltip-text {
+    margin: .25rem 0 0 0;
+    padding: .25rem 1rem;
+    left: 0%;
+    font-size: .95rem;
+}
+.channel-box a:hover .tooltip-text, .channel-box a:focus .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
 .live-indicator {
     padding: .5rem 2rem;
     color: #555;

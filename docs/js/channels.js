@@ -1,7 +1,14 @@
-const vtuberGroups = {
+const VtuberGroup = {
     HOLOLIVE: 'UCJFZiqLMntJufDCHc6bQixg',
+    HOLOLIVE_CN: '286700005',
     HOLOLIVE_ID: 'UCfrWoRGlawPQDQxxeIDRP0Q',
-    HOLOSTARS: 'UCWsfcksUUpoEvhia0_ut0bA'
+    HOLOSTARS: 'UCWsfcksUUpoEvhia0_ut0bA',
+    NIJISANJI: 'UCX7YkU9nEeaoZbkVLVajcMg'
+}
+
+const Platform = {
+    YOUTUBE: 'https://www.youtube.com/channel/',
+    BILIBILI: 'https://space.bilibili.com/'
 }
 
 // Indicies
@@ -9,7 +16,36 @@ const CHANNEL_ID = 0;
 const CHANNEL_ICON = 1;
 const CHANNEL_NAME = 2;
 
-// Channel info gathered from loadChannels(key) in request.js
+// Channel information for VTuber groups
+let channelGroups = [
+    [
+        VtuberGroup.HOLOLIVE,
+        "https://yt3.ggpht.com/a/AATXAJzjWwRdmmhGzuq3bVs7whSPX3piTL7dDR-2Eah0nQ=s288-c-k-c0xffffffff-no-rj-mo",
+        "hololive (ホロライブ)"
+    ],
+    [
+        VtuberGroup.HOLOLIVE_CN,
+        "https://i1.hdslb.com/bfs/face/52f316ed4b89f48f3fea7cc165585c04c32f32df.jpg_64x64.jpg",
+        "hololive China"
+    ],
+    [
+        VtuberGroup.HOLOLIVE_ID,
+        "https://yt3.ggpht.com/a/AATXAJy_etNXRipQSwEIMrTrZfFPh0hfpp2BPhbNxZ1O=s288-c-k-c0xffffffff-no-rj-mo",
+        "hololive Indonesia"
+    ],
+    [
+        VtuberGroup.HOLOSTARS,
+        "https://yt3.ggpht.com/a/AATXAJx7UXk-MNOlacftL_vddK2Bqk1KleKEKrBUp28=s288-c-k-c0xffffffff-no-rj-mo",
+        "holostars (ホロスターズ公式)"
+    ],
+    [
+        VtuberGroup.NIJISANJI,
+        "https://yt3.ggpht.com/a/AATXAJygMFxLVseOFJ3cZRbBNTrK8FdL_K9aFO4nQmx0=s288-c-k-c0xffffffff-no-rj-mo",
+        "Nijisanji (にじさんじ)"
+    ]
+]
+
+// Channel information for individual VTubers
 let channels = [
     [ // hololive Japan
         [
@@ -153,6 +189,38 @@ let channels = [
             "Luna Ch. 姫森ルーナ"
         ]
     ],
+    [ // hololive China
+        [
+            "427061218",
+            "https://i0.hdslb.com/bfs/face/a9aa8f5b06236b6fb379fae790f486d1eab176bb.jpg_64x64.jpg",
+            "夜霧Yogiri"
+        ],
+        [
+            "354411419",
+            "https://i0.hdslb.com/bfs/face/7a08841c515eabff96f7ac8ac55d98ce3d05a5b3.jpg_64x64.jpg",
+            "希薇娅Civia"
+        ],
+        [
+            "456368455",
+            "https://i2.hdslb.com/bfs/face/b5e82aca42450be98952a72681eccb3a5c7b096b.jpg_64x64.jpg",
+            "黑桃影"
+        ],
+        [
+            "511613156",
+            "https://i2.hdslb.com/bfs/face/60dae3c34da1569bd0f9f696dd9aca2d2914bf85.jpg_64x64.jpg",
+            "朵莉丝Doris"
+        ],
+        [
+            "511613155",
+            "https://i2.hdslb.com/bfs/face/fd426e579de8762eaa6f5ec376970ec2d04294c3.jpg_64x64.jpg",
+            "阿媂娅Artia"
+        ],
+        [
+            "511613157",
+            "https://i1.hdslb.com/bfs/face/38ed261b885c7ebdc5e17d530024530bd1c3eddb.jpg_64x64.jpg",
+            "罗莎琳Rosalyn"
+        ]
+    ],
     [ // hololive Indonesia
         [
             "UCOyYb1c43VlX9rc_lT6NKQw",
@@ -225,6 +293,48 @@ let channels = [
             "UCwL7dgTxKo8Y4RFIKWaf8gA",
             "https://yt3.ggpht.com/a/AATXAJxHDvBIDa7-BqA8KnWhyS45S6k1-yHe8syfeEri=s88-c-k-c0xffffffff-no-rj-mo",
             "Oga Ch.荒咬オウガ"
+        ]
+    ],
+    [ // Nijisanji
+        [
+            "UCD-miitqNY3nyukJ4Fnf4_A",
+            "https://yt3.ggpht.com/a/AATXAJzloNyJgJauawF6NcFTYc9U0uG00gwCyK40vlBEtg=s88-c-k-c0xffffffff-no-rj-mo",
+            "月ノ美兎"
+        ],
+        [
+            "UCLO9QDxVL4bnvRRsz6K4bsQ",
+            "https://yt3.ggpht.com/a/AATXAJxcPHyvb-AIFlk7KoAaMwh8nSz9zq4HB6rPlEde=s88-c-k-c0xffffffff-no-rj-mo",
+            "勇気ちひろ"
+        ],
+        [
+            "UCYKP16oMX9KKPbrNgo_Kgag",
+            "https://yt3.ggpht.com/a/AATXAJzaYqBcv7TIc2GEfL6QlBI-K9cTmdoqtCbbklwN=s88-c-k-c0xffffffff-no-rj-mo",
+            "エルフのえる / にじさんじ所属"
+        ],
+        [
+            "UCsg-YqdqQ-KFF0LNk23BY4A",
+            "https://yt3.ggpht.com/a/AATXAJzKhsnzciCahUZ4JUQK44UQo6VieS22b0h7frr_=s88-c-k-c0xffffffff-no-rj-mo",
+            "樋口楓【にじさんじ所属】"
+        ],
+        [
+            "UC6oDys1BGgBsIC3WhG1BovQ",
+            "https://yt3.ggpht.com/a/AATXAJzx6b79exsGqBy-1Oof_27mYBVNsKDzpHxj3kznrw=s88-c-k-c0xffffffff-no-rj-mo",
+            "Shizuka Rin Official"
+        ],
+        [
+            "UCeK9HFcRZoTrvqcUCtccMoQ",
+            "https://yt3.ggpht.com/a/AATXAJwH4kwGfPW76Lh92vh8cm7Jp91ygrVtFHsGyzHi=s88-c-k-c0xffffffff-no-rj-mo",
+            "渋谷ハジメのはじめ支部"
+        ],
+        [
+            "UCpnvhOIJ6BN-vPkYU9ls-Eg",
+            "https://yt3.ggpht.com/a/AATXAJxfYN2mWghjKxg7wG64D4GmzQJ1GgHXAKLUSFn1=s88-c-k-c0xffffffff-no-rj-mo",
+            "鈴谷アキの陽だまりの庭"
+        ],
+        [
+            "UCvmppcdYf4HOv-tFQhHHJMA",
+            "https://yt3.ggpht.com/a/AATXAJz_R66sJA_JaYGcsSsq5QfliAQFjzgbgt9p2MSr=s88-c-k-c0xffffffff-no-rj-mo",
+            "《にじさんじ所属の女神》モイラ"
         ]
     ]
 ];
@@ -348,6 +458,32 @@ let searchTerms = [
             "himemoriluna"
         ]
     ],
+    [ // hololive China
+        [
+            "Yogiri",
+            "Yogiri_hololive"
+        ],
+        [
+            "Civia",
+            "Civia_hololive"
+        ],
+        [
+            "Spade Echo",
+            "SpadeEcho"
+        ],
+        [
+            "Doris",
+            "Doris_Hololive"
+        ],
+        [
+            "Artia",
+            "Artia_Hololive"
+        ],
+        [
+            "Rosalyn",
+            "Rosalyn_holoCN"
+        ]
+    ],
     [ // hololive Indonesia
         [
             "Ayunda Risu",
@@ -376,7 +512,7 @@ let searchTerms = [
             "kagamikirach"
         ],
         [
-            "Aruran Deisu",
+            "Arurandeisu",
             "arurandeisu"
         ],
         [
@@ -384,7 +520,7 @@ let searchTerms = [
             "rikkaroid"
         ],
         [
-            "Astel",
+            "Astel Leda",
             "astelleda"
         ],
         [
@@ -406,6 +542,40 @@ let searchTerms = [
         [
             "Aragami Oga",
             "aragamioga"
+        ]
+    ],
+    [ // Nijisanji
+        [
+            "Tsukino Mito",
+            "MitoTsukino"
+        ],
+        [
+            "Yuuki Chihiro",
+            "Chihiro_yuki23"
+        ],
+        [
+            "Elu the Elf",
+            "Elu_World"
+        ],
+        [
+            "Higuchi Kaede",
+            "HiguchiKaede"
+        ],
+        [
+            "Shizuka Rin",
+            "ShizuRin23"
+        ],
+        [
+            "Shibuya Hajime",
+            "sibuya_hajime"
+        ],
+        [
+            "Suzuya Aki",
+            "aki_suzuya"
+        ],
+        [
+            "Moira",
+            "Moiramoimoimoi"
         ]
     ]
 ]

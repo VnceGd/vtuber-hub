@@ -10,53 +10,76 @@ function checkLength(string) {
     return string.length > maxLength ? string.substring(0, maxLength) + "..." : string;
 }
 
+// Return platform associated with group specified by list
+function setPlatform(id) {
+    switch (id) {
+        case VtuberGroup.HOLOLIVE:
+        case VtuberGroup.HOLOLIVE_ID:
+        case VtuberGroup.HOLOSTARS:
+        case VtuberGroup.NIJISANJI:
+            return Platform.YOUTUBE;
+        case VtuberGroup.HOLOLIVE_CN:
+            return Platform.BILIBILI;
+    }
+}
+
+// Create and append a vtuber-group div to the main container
+function createList(list) {
+    let channelId = channelGroups[list][CHANNEL_ID];
+    let channelName = channelGroups[list][CHANNEL_NAME];
+    let platformLink = setPlatform(channelId);
+
+    let listTemplate = `
+        <div class="vtuber-group">
+            <a href="${platformLink}${channelId}" target="_blank" rel="noopener">
+                <h1>
+                    <img src="${channelGroups[list][CHANNEL_ICON]}" alt="${channelName}-thumbnail"/>
+                    ${channelName}
+                </h1>
+            </a>
+            <div id="${channelId}-list" class="channel-list"><ul></ul></div>
+        </div>
+    `;
+
+    $(`#vtuber-groups .container`).append(listTemplate);
+}
+
 // Create and append a channel box to channel-list div with id corresponding to channels array index
 function populateList(list, id) {
-    let ytId = channels[list][id][CHANNEL_ID];
+    let channelId = channels[list][id][CHANNEL_ID];
     let fullName = channels[list][id][CHANNEL_NAME];
     let localizedName = searchTerms[list][id][LOCALIZED_NAME];
     let twitterHandle = searchTerms[list][id][TWITTER_HANDLE];
     let nameString = checkLength(fullName);
+    let platformLink = setPlatform(channelGroups[list][CHANNEL_ID]);
 
     let channelBoxTemplate = `
         <li class="channel-box">
-            <a href="https://www.youtube.com/channel/${ytId}" target="_blank" rel="noopener">
+            <a href="${platformLink}${channelId}" target="_blank" rel="noopener">
                 <span class="search-term">${fullName}, ${localizedName}, ${twitterHandle}</span>
                 <div class="channel-content">
                     <div class="channel-icon">
                         <img src="${channels[list][id][CHANNEL_ICON]}" alt="${fullName}-thumbnail"/>
                     </div>
                     <!--<div id="live-${id}" class="live-indicator">LIVE</div>-->
-                    <!--<button onclick="getLivestreamStatus(${ytId})">Refresh</button>-->
                     <div class="channel-title">
                         <h3>${nameString}</h3>
                     </div>
                 </div>
             </a>
         </li>
-        `;
-    
-    let stringId = ""
-    switch (list) {
-        case 0:
-            stringId = "hololive";
-            break;
-        case 1:
-            stringId = "hololive_id";
-            break;
-        case 2:
-            stringId = "holostars";
-            break;
-    }
-    stringId += "-list";
+    `;
+
+    let stringId = `${channelGroups[list][CHANNEL_ID]}-list`;
 
     $(`#${stringId} ul`).append(channelBoxTemplate);
 }
 
 // Clear and re-populate the channel-list div
 function refreshList() {
-    $('.channel-list ul').html("");
+    $('#vtuber-groups .container').html("");
     for (let i = 0; i < channels.length; i++) {
+        createList(i);
         for (let j = 0; j < channels[i].length; j++) {
             populateList(i, j);
         }
@@ -67,10 +90,11 @@ function refreshList() {
 // Toggle between grid and list view
 function toggleListView() {
     listView = !listView;
-    refreshList();
 
     $('.channel-list ul').toggleClass('list');
     $('.view').toggleClass('list');
+
+    searchLists();
 }
 
 // Set default view to list view if screen width less than 540px
@@ -82,5 +106,5 @@ function setDefaultView() {
 
 $(".view a").on('click', toggleListView);
 
-setDefaultView();
 refreshList();
+setDefaultView();

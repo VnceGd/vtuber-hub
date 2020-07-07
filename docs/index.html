@@ -53,47 +53,11 @@
                 <input type="text" id="searchInput" onkeyup="searchLists()" placeholder="Search" aria-label="Search">
             </h1>
         </nav>
-        <div class="container">
-            <div class="vtuber-group">
-                <a href="https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg" target="_blank" rel="noopener">
-                    <h1>
-                        <img src="https://yt3.ggpht.com/a/AATXAJzjWwRdmmhGzuq3bVs7whSPX3piTL7dDR-2Eah0nQ=s288-c-k-c0xffffffff-no-rj-mo" alt="hololive-thumbnail"/>
-                        hololive (ホロライブ)
-                    </h1>
-                </a>
-                <div id="hololive-list" class="channel-list">
-                    <ul>
-                        <!-- Populated by populateList(id) in view.js -->
-                    </ul>
-                </div>
+        <section id="vtuber-groups">
+            <div class="container">
+                <!-- Populated by refreshList() in view.js -->
             </div>
-            <div class="vtuber-group">
-                <a href="https://www.youtube.com/channel/UCfrWoRGlawPQDQxxeIDRP0Q" target="_blank" rel="noopener">
-                    <h1>
-                        <img src="https://yt3.ggpht.com/a/AATXAJy_etNXRipQSwEIMrTrZfFPh0hfpp2BPhbNxZ1O=s288-c-k-c0xffffffff-no-rj-mo" alt="hololive_id-thumbnail"/>
-                        hololive Indonesia
-                    </h1>
-                </a>
-                <div id="hololive_id-list" class="channel-list">
-                    <ul>
-                        <!-- Populated by populateList(id) in view.js -->
-                    </ul>
-                </div>
-            </div>
-            <div class="vtuber-group">
-                <a href="https://www.youtube.com/channel/UCWsfcksUUpoEvhia0_ut0bA" target="_blank" rel="noopener">
-                    <h1>
-                        <img src="https://yt3.ggpht.com/a/AATXAJx7UXk-MNOlacftL_vddK2Bqk1KleKEKrBUp28=s288-c-k-c0xffffffff-no-rj-mo" alt="holostars-thumbnail"/>
-                        holostars (ホロスターズ公式)
-                    </h1>
-                </a>
-                <div id="holostars-list" class="channel-list">
-                    <ul>
-                        <!-- Populated by populateList(id) in view.js -->
-                    </ul>
-                </div>
-            </div>
-        </div>
+        </section>
         <footer>
             <div class="container">
                 <a href="https://github.com/VnceGd/vtuber-hub">

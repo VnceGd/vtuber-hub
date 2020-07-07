@@ -63,12 +63,22 @@ function refreshList() {
 
 // Snippet modified from Webdevtrick (https://webdevtrick.com)
 // Toggle between grid and list view
-$(".view a").on('click', function() {
+function toggleListView() {
     listView = !listView;
     refreshList();
 
     $('.channel-list ul').toggleClass('list');
     $('.view').toggleClass('list');
-});
+}
 
+// Set default view to list view if screen width less than 540px
+function setDefaultView() {
+    if ($(document).width() < 540) {
+        toggleListView();
+    }
+}
+
+$(".view a").on('click', toggleListView);
+
+setDefaultView();
 refreshList();

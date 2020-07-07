@@ -12,17 +12,19 @@ function checkLength(string) {
 
 // Create and append a channel box to channel-list div with id corresponding to channels array index
 function populateList(list, id) {
-    let ytId = channels[list][id][channelId];
-    let fullName = channels[list][id][channelName];
+    let ytId = channels[list][id][CHANNEL_ID];
+    let fullName = channels[list][id][CHANNEL_NAME];
+    let localizedName = searchTerms[list][id][LOCALIZED_NAME];
+    let twitterHandle = searchTerms[list][id][TWITTER_HANDLE];
     let nameString = checkLength(fullName);
 
     let channelBoxTemplate = `
         <li class="channel-box">
             <a href="https://www.youtube.com/channel/${ytId}" target="_blank" rel="noopener">
-                <span class="search-term">${fullName} </span>
+                <span class="search-term">${fullName}, ${localizedName}, ${twitterHandle}</span>
                 <div class="channel-content">
                     <div class="channel-icon">
-                        <img src="${channels[list][id][channelIcon]}" alt="${fullName}-thumbnail"/>
+                        <img src="${channels[list][id][CHANNEL_ICON]}" alt="${fullName}-thumbnail"/>
                     </div>
                     <!--<div id="live-${id}" class="live-indicator">LIVE</div>-->
                     <!--<button onclick="getLivestreamStatus(${ytId})">Refresh</button>-->

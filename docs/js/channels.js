@@ -5,9 +5,9 @@ const vtuberGroups = {
 }
 
 // Indicies
-let channelId = 0;
-let channelIcon = 1;
-let channelName = 2;
+const CHANNEL_ID = 0;
+const CHANNEL_ICON = 1;
+const CHANNEL_NAME = 2;
 
 // Channel info gathered from loadChannels(key) in request.js
 let channels = [
@@ -225,6 +225,187 @@ let channels = [
             "UCwL7dgTxKo8Y4RFIKWaf8gA",
             "https://yt3.ggpht.com/a/AATXAJxHDvBIDa7-BqA8KnWhyS45S6k1-yHe8syfeEri=s88-c-k-c0xffffffff-no-rj-mo",
             "Oga Ch.荒咬オウガ"
+        ]
+    ]
+];
+
+// Indicies
+const LOCALIZED_NAME = 0;
+const TWITTER_HANDLE = 1;
+
+let searchTerms = [
+    [ // hololive Japan
+        [
+            "Shirakami Fubuki",
+            "shirakamifubuki"
+        ],
+        [
+            "Tokino Sora",
+            "tokino_sora"
+        ],
+        [
+            "Roboco",
+            "robocosan"
+        ],
+        [
+            "Akai Haato",
+            "akaihaato"
+        ],
+        [
+            "Natsuiro Matsuri",
+            "natsuiromatsuri"
+        ],
+        [
+            "Yozora Mel",
+            "yozoramel"
+        ],
+        [
+            "Aki Rosenthal",
+            "akirosenthal"
+        ],
+        [
+            "Minato Aqua",
+            "minatoaqua"
+        ],
+        [
+            "Murasaki Shion",
+            "murasakishionch"
+        ],
+        [
+            "Nakiri Ayame",
+            "nakiriayame"
+        ],
+        [
+            "Yuzuki Choco",
+            "yuzukichococh"
+        ],
+        [
+            "Oozora Subaru",
+            "oozorasubaru"
+        ],
+        [
+            "Ookami Mio",
+            "ookamimio"
+        ],
+        [
+            "Sakura Miko",
+            "sakuramiko35"
+        ],
+        [
+            "Inugami Korone",
+            "inugamikorone"
+        ],
+        [
+            "Nekomata Okayu",
+            "nekomataokayu"
+        ],
+        [
+            "AZKi",
+            "AZKi_VDiVA"
+        ],
+        [
+            "Hoshimachi Suisei",
+            "suisei_hosimati"
+        ],
+        [
+            "Uruha Rushia",
+            "uruharushia"
+        ],
+        [
+            "Usada Pekora",
+            "usadapekora"
+        ],
+        [
+            "Shiranui Flare",
+            "shiranuiflare"
+        ],
+        [
+            "Shirogane Noel",
+            "shiroganenoel"
+        ],
+        [
+            "Houshou Marine",
+            "houshoumarine"
+        ],
+        [
+            "Tsunomaki Watame",
+            "tsunomakiwatame"
+        ],
+        [
+            "Tokoyami Towa",
+            "tokoyamitowa"
+        ],
+        [
+            "Kiryu Coco",
+            "kiryucoco"
+        ],
+        [
+            "Amane Kanata",
+            "amanekanatach"
+        ],
+        [
+            "Himemori Luna",
+            "himemoriluna"
+        ]
+    ],
+    [ // hololive Indonesia
+        [
+            "Ayunda Risu",
+            "ayunda_risu"
+        ],
+        [
+            "Moona Hoshinova",
+            "moonahoshinova"
+        ],
+        [
+            "Airani Iofifteen",
+            "airaniiofifteen"
+        ]
+    ],
+    [ // holostars
+        [
+            "Miyabi Hanasaki",
+            "miyabihanasaki"
+        ],
+        [
+            "Kanade Izuru",
+            "kanadeizuru"
+        ],
+        [
+            "Kagami Kira",
+            "kagamikirach"
+        ],
+        [
+            "Aruran Deisu",
+            "arurandeisu"
+        ],
+        [
+            "Rikka",
+            "rikkaroid"
+        ],
+        [
+            "Astel",
+            "astelleda"
+        ],
+        [
+            "Kishido Tenma",
+            "kishidotemma"
+        ],
+        [
+            "Yukoku Roberu",
+            "yukokuroberu"
+        ],
+        [
+            "Tsukishita Kaoru",
+            "tsukishitakaoru"
+        ],
+        [
+            "Kageyama Shien",
+            "kageyamashien"
+        ],
+        [
+            "Aragami Oga",
+            "aragamioga"
         ]
     ]
 ]

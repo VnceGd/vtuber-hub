@@ -20,27 +20,27 @@ const CHANNEL_NAME = 2;
 let channelGroups = [
     [
         VtuberGroup.HOLOLIVE,
-        "https://yt3.ggpht.com/a/AATXAJzjWwRdmmhGzuq3bVs7whSPX3piTL7dDR-2Eah0nQ=s288-c-k-c0xffffffff-no-rj-mo",
+        "https://yt3.ggpht.com/a/AATXAJzjWwRdmmhGzuq3bVs7whSPX3piTL7dDR-2Eah0nQ=s88-c-k-c0xffffffff-no-rj-mo",
         "hololive (ホロライブ)"
     ],
     [
         VtuberGroup.HOLOLIVE_CN,
-        "https://i1.hdslb.com/bfs/face/52f316ed4b89f48f3fea7cc165585c04c32f32df.jpg_64x64.jpg",
+        "https://yt3.ggpht.com/a/AATXAJzjWwRdmmhGzuq3bVs7whSPX3piTL7dDR-2Eah0nQ=s88-c-k-c0xffffffff-no-rj-mo",
         "hololive China"
     ],
     [
         VtuberGroup.HOLOLIVE_ID,
-        "https://yt3.ggpht.com/a/AATXAJy_etNXRipQSwEIMrTrZfFPh0hfpp2BPhbNxZ1O=s288-c-k-c0xffffffff-no-rj-mo",
+        "https://yt3.ggpht.com/a/AATXAJy_etNXRipQSwEIMrTrZfFPh0hfpp2BPhbNxZ1O=s88-c-k-c0xffffffff-no-rj-mo",
         "hololive Indonesia"
     ],
     [
         VtuberGroup.HOLOSTARS,
-        "https://yt3.ggpht.com/a/AATXAJx7UXk-MNOlacftL_vddK2Bqk1KleKEKrBUp28=s288-c-k-c0xffffffff-no-rj-mo",
+        "https://yt3.ggpht.com/a/AATXAJx7UXk-MNOlacftL_vddK2Bqk1KleKEKrBUp28=s88-c-k-c0xffffffff-no-rj-mo",
         "holostars (ホロスターズ公式)"
     ],
     [
         VtuberGroup.NIJISANJI,
-        "https://yt3.ggpht.com/a/AATXAJygMFxLVseOFJ3cZRbBNTrK8FdL_K9aFO4nQmx0=s288-c-k-c0xffffffff-no-rj-mo",
+        "https://yt3.ggpht.com/a/AATXAJygMFxLVseOFJ3cZRbBNTrK8FdL_K9aFO4nQmx0=s88-c-k-c0xffffffff-no-rj-mo",
         "Nijisanji (にじさんじ)"
     ]
 ]
@@ -192,32 +192,32 @@ let channels = [
     [ // hololive China
         [
             "427061218",
-            "https://i0.hdslb.com/bfs/face/a9aa8f5b06236b6fb379fae790f486d1eab176bb.jpg_64x64.jpg",
+            "../img/thumbnail/a9aa8f5b06236b6fb379fae790f486d1eab176bb.jpg_88x88.jpg",
             "夜霧Yogiri"
         ],
         [
             "354411419",
-            "https://i0.hdslb.com/bfs/face/7a08841c515eabff96f7ac8ac55d98ce3d05a5b3.jpg_64x64.jpg",
+            "../img/thumbnail/7a08841c515eabff96f7ac8ac55d98ce3d05a5b3.jpg_88x88.jpg",
             "希薇娅Civia"
         ],
         [
             "456368455",
-            "https://i2.hdslb.com/bfs/face/b5e82aca42450be98952a72681eccb3a5c7b096b.jpg_64x64.jpg",
+            "../img/thumbnail/b5e82aca42450be98952a72681eccb3a5c7b096b.jpg_88x88.jpg",
             "黑桃影"
         ],
         [
             "511613156",
-            "https://i2.hdslb.com/bfs/face/60dae3c34da1569bd0f9f696dd9aca2d2914bf85.jpg_64x64.jpg",
+            "../img/thumbnail/60dae3c34da1569bd0f9f696dd9aca2d2914bf85.jpg_88x88.jpg",
             "朵莉丝Doris"
         ],
         [
             "511613155",
-            "https://i2.hdslb.com/bfs/face/fd426e579de8762eaa6f5ec376970ec2d04294c3.jpg_64x64.jpg",
+            "../img/thumbnail/fd426e579de8762eaa6f5ec376970ec2d04294c3.jpg_88x88.jpg",
             "阿媂娅Artia"
         ],
         [
             "511613157",
-            "https://i1.hdslb.com/bfs/face/38ed261b885c7ebdc5e17d530024530bd1c3eddb.jpg_64x64.jpg",
+            "../img/thumbnail/38ed261b885c7ebdc5e17d530024530bd1c3eddb.jpg_88x88.jpg",
             "罗莎琳Rosalyn"
         ]
     ],

@@ -4,6 +4,8 @@
 
 A website which makes use of [YouTube Data API v3](https://developers.google.com/youtube/v3) as well as the [Virtual YouTuber Wiki](https://virtualyoutuber.fandom.com) to gather information about VTuber channels, which is then copied into an array and generated into HTML lists using Javascript.
 
+**Disclaimer**: This project has no affiliation with any of the Virtual YouTuber channels, groups, or communities listed on the website or repository. Its original purpose was to explore usage of the YouTube API.
+
 ### Current Listing
 
 * [hololive](https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg)

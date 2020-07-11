@@ -250,42 +250,42 @@ let channels = [
     [ // hololive China
         [
             "427061218",
-            "img/thumbnail/a9aa8f5b06236b6fb379fae790f486d1eab176bb.jpg_88x88.jpg",
+            "img/thumbnail/yogiri.jpg",
             "夜霧Yogiri",
             "Yogiri",
             "Yogiri_hololive"
         ],
         [
             "354411419",
-            "img/thumbnail/7a08841c515eabff96f7ac8ac55d98ce3d05a5b3.jpg_88x88.jpg",
+            "img/thumbnail/civia.jpg",
             "希薇娅Civia",
             "Civia",
             "Civia_hololive"
         ],
         [
             "456368455",
-            "img/thumbnail/b5e82aca42450be98952a72681eccb3a5c7b096b.jpg_88x88.jpg",
+            "img/thumbnail/spade_echo.jpg",
             "黑桃影",
             "Spade Echo",
             "SpadeEcho"
         ],
         [
             "511613156",
-            "img/thumbnail/60dae3c34da1569bd0f9f696dd9aca2d2914bf85.jpg_88x88.jpg",
+            "img/thumbnail/doris.jpg",
             "朵莉丝Doris",
             "Doris",
             "Doris_Hololive"
         ],
         [
             "511613155",
-            "img/thumbnail/fd426e579de8762eaa6f5ec376970ec2d04294c3.jpg_88x88.jpg",
+            "img/thumbnail/artia.jpg",
             "阿媂娅Artia",
             "Artia",
             "Artia_Hololive"
         ],
         [
             "511613157",
-            "img/thumbnail/38ed261b885c7ebdc5e17d530024530bd1c3eddb.jpg_88x88.jpg",
+            "img/thumbnail/rosalyn.jpg",
             "罗莎琳Rosalyn",
             "Rosalyn",
             "Rosalyn_holoCN"

@@ -19,6 +19,7 @@ button {
     cursor: pointer;
 }
 ul {
+    margin: 1rem 0;
     padding: 0;
     list-style: none;
 }
@@ -103,8 +104,8 @@ nav h1 img {
 }
 .channel-box {
     margin-bottom: 1vw;
-    width: 88vw;
-    height: 88vw;
+    width: 85vw;
+    height: 85vw;
     display: flex;
     position: relative;
     text-align: center;

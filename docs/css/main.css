@@ -52,6 +52,9 @@ nav h1 img {
 #title {
     margin-right: 1rem;
 }
+#logo-text {
+    display: none;
+}
 .view {
     margin-right: 1rem;
     display: inline-block;
@@ -80,7 +83,7 @@ nav h1 img {
     display: block;
 }
 #searchInput {
-    width: 3.5rem;
+    width: 8rem;
     padding: 1rem;
     color: var(--text-col);
     background: var(--root-col);
@@ -98,7 +101,6 @@ nav h1 img {
 .vtuber-group h1 {
     display: inline-block;
 }
-
 .channel-box {
     margin-bottom: 1vw;
     width: 88vw;
@@ -179,13 +181,7 @@ nav h1 img {
 }
 .list .channel-icon img {
     margin: 0 1rem 0 0;
-    height: 4rem;
-}
-.list .localized-name {
-    margin: .25rem 0 0 0;
-    padding: .25rem 1rem;
-    left: 0%;
-    font-size: .95rem;
+    height: 6rem;
 }
 .channel-list .list .live-indicator {
     margin-right: 1rem;

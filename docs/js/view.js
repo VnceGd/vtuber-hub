@@ -3,13 +3,6 @@ const MAX_LENGTH_LIST = 100;
 
 let listView = false;
 
-// Limit the length of a string based on grid/list view
-function checkLength(string) {
-    let maxLength = listView ? MAX_LENGTH_LIST : MAX_LENGTH_GRID;
-
-    return string.length > maxLength ? string.substring(0, maxLength) + "..." : string;
-}
-
 // Return platform associated with group specified by list
 function setPlatform(id) {
     switch (id) {
@@ -50,7 +43,6 @@ function populateList(list, id) {
     let fullName = channels[list][id][CHANNEL_NAME];
     let localizedName = channels[list][id][LOCALIZED_NAME];
     let twitterHandle = channels[list][id][TWITTER_HANDLE];
-    let nameString = checkLength(fullName);
     let platformLink = setPlatform(channelGroups[list][CHANNEL_ID]);
 
     let channelBoxTemplate = `
@@ -61,9 +53,9 @@ function populateList(list, id) {
                     <div class="channel-icon">
                         <img src="${channels[list][id][CHANNEL_ICON]}" alt="${fullName}-thumbnail"/>
                     </div>
-                    <!--<div id="live-${id}" class="live-indicator">LIVE</div>-->
                     <div class="channel-title">
-                        <h3 class="tooltip">${nameString}<span class="tooltip-text">${localizedName}</span></h3>
+                        <h3 class="channel-name">${fullName}</h3>
+                        <span class="localized-name">${localizedName}</span>
                     </div>
                 </div>
             </a>
@@ -97,9 +89,9 @@ function toggleListView() {
     searchLists();
 }
 
-// Set default view to list view if screen width less than 540px
+// Set default view to list view if screen width less than 768px
 function setDefaultView() {
-    if ($(document).width() < 540) {
+    if ($(document).width() < 768) {
         toggleListView();
     }
 }

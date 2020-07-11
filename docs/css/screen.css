@@ -9,13 +9,16 @@
         height: 44vw;
     }
     .channel-icon img {
-        height: 15vw;
+        height: 16vw;
     }
 }
 @media screen and (min-width: 768px) {
     .channel-box {
         width: 30vw;
         height: 30vw;
+    }
+    .channel-icon img {
+        height: 12vw;
     }
 }
 @media screen and (min-width: 1024px) {

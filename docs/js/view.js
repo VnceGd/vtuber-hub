@@ -101,4 +101,11 @@ $(".view a").on('click', toggleListView);
 $(document).ready(function() {
     refreshList();
     setDefaultView();
+
+    $('#grid-view, #list-view').on("keydown", function(e) {
+        if (event.keyCode === 13) {
+            toggleListView();
+            listView ? $('#list-view').focus() : $('#grid-view').focus();
+        }
+    })
 });

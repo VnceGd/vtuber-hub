@@ -449,6 +449,76 @@ let channels = [
             "《にじさんじ所属の女神》モイラ",
             "Moira",
             "Moiramoimoimoi"
+        ],
+        [
+            "UCt0clH12Xk1-Ej5PXKGfdPA",
+            "https://yt3.ggpht.com/a/AATXAJwOlinsLww_3SSI1NgExhGyfYaAak6xkKL0N3lM=s288-c-k-c0xffffffff-no-rj-mo",
+            "♥️♠️物述有栖♦️♣️",
+            "Mononobe Alice",
+            "AliceMononobe"
+        ],
+        [
+            "UCXU7YYxy_iQd3ulXyO-zC2w",
+            "https://yt3.ggpht.com/a/AATXAJx3ZOILn-CCqQcHuHrRVhzjsHQoyDMK0AY0jpcuAQ=s288-c-k-c0xffffffff-no-rj-mo",
+            "伏見ガク【にじさんじ所属】",
+            "Fushimi Gaku",
+            "gaku_fushimi"
+        ],
+        [
+            "UC_GCs6GARLxEHxy1w40d6VQ",
+            "https://yt3.ggpht.com/a/AATXAJyncBLWfo2XWJWFX1PS7qUBHEbCStbj5PM8fi4H=s288-c-k-c0xffffffff-no-rj-mo",
+            "家長むぎ【にじさんじ所属】",
+            "Ienaga Mugi",
+            "ienaga_mugi23"
+        ],
+        [
+            "UCtpB6Bvhs1Um93ziEDACQ8g",
+            "https://yt3.ggpht.com/a/AATXAJz2OM2EEH03UIjQqSlg4wKyVZQKqaCDEp__ifF5=s288-c-k-c0xffffffff-no-rj-mo",
+            "森中花咲",
+            "Morinaka Kazaki",
+            "KazakiMorinaka"
+        ],
+        [
+            "UCwokZsOK_uEre70XayaFnzA",
+            "https://yt3.ggpht.com/a/AATXAJy3F7Z22UqKUGTmAL3Y6D54N5xNTrB3-Oenb9uk=s288-c-k-c0xffffffff-no-rj-mo",
+            "鈴鹿詩子 Utako Suzuka",
+            "Suzuka Utako",
+            "suzukautako"
+        ],
+        [
+            "UCmUjjW5zF1MMOhYUwwwQv9Q",
+            "https://yt3.ggpht.com/a/AATXAJxFgj56cj5A1EQs_tyzC55gL2CSa66-RvVjdR_n=s288-c-k-c0xffffffff-no-rj-mo",
+            "宇志海いちご",
+            "Ushimi Ichigo",
+            "ushimi_ichigo"
+        ],
+        [
+            "UC48jH1ul-6HOrcSSfoR02fQ",
+            "https://yt3.ggpht.com/a/AATXAJxzMiZDOJ8UDpxRg98t6GbDZOuGJQMz74IcESiz=s288-c-k-c0xffffffff-no-rj-mo",
+            "Yuhi Riri Official",
+            "Yuuhi Riri",
+            "Yuuhi_Riri"
+        ],
+        [
+            "UCv1fFr156jc65EMiLbaLImw",
+            "https://yt3.ggpht.com/a/AATXAJx3LF3D_djtbBluDXBp2JnWAkGOrOB7TpAVn8f2=s288-c-k-c0xffffffff-no-rj-mo",
+            "剣持刀也",
+            "Kenmochi Toya",
+            "rei_Toya_rei"
+        ],
+        [
+            "UCUzJ90o1EjqUbk2pBAy0_aw",
+            "https://yt3.ggpht.com/a/AATXAJwDh0HUqC1AI-LAtrOv6IXZzoeN0wiJ5NCR6tpWPA=s288-c-k-c0xffffffff-no-rj-mo",
+            "Gilzaren III Season 2",
+            "Gilzaren III",
+            "Gilzaren_III"
+        ],
+        [
+            "UCBiqkFJljoxAj10SoP2w2Cg",
+            "https://yt3.ggpht.com/a/AATXAJy1M6jwTNUbi0bjokJFYkGFI7qwUfbZPOvE9jW8=s288-c-k-c0xffffffff-no-rj-mo",
+            "文野環【にじさんじの野良猫】ふみのたまき",
+            "Fumino Tamaki",
+            "nekochan_chu"
         ]
     ]
 ];

@@ -48,8 +48,8 @@ function createList(list) {
 function populateList(list, id) {
     let channelId = channels[list][id][CHANNEL_ID];
     let fullName = channels[list][id][CHANNEL_NAME];
-    let localizedName = searchTerms[list][id][LOCALIZED_NAME];
-    let twitterHandle = searchTerms[list][id][TWITTER_HANDLE];
+    let localizedName = channels[list][id][LOCALIZED_NAME];
+    let twitterHandle = channels[list][id][TWITTER_HANDLE];
     let nameString = checkLength(fullName);
     let platformLink = setPlatform(channelGroups[list][CHANNEL_ID]);
 
@@ -106,5 +106,7 @@ function setDefaultView() {
 
 $(".view a").on('click', toggleListView);
 
-refreshList();
-setDefaultView();
+$(document).ready(function() {
+    refreshList();
+    setDefaultView();
+});

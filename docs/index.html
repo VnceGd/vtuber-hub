@@ -16,8 +16,8 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
         <script src="js/channels.js"></script>
+        <script src="js/search.js"></script>
         <script src="js/view.js" defer></script>
-        <script src="js/search.js" defer></script>
     </head>
     <body>
         <nav>
@@ -53,11 +53,13 @@
                 <input type="text" id="searchInput" onkeyup="searchLists()" placeholder="Search" aria-label="Search">
             </h1>
         </nav>
-        <section id="vtuber-groups">
-            <div class="container">
-                <!-- Populated by refreshList() in view.js -->
-            </div>
-        </section>
+        <main>
+            <section id="vtuber-groups">
+                <div class="container">
+                    <!-- Populated by refreshList() in view.js -->
+                </div>
+            </section>
+        </main>
         <footer>
             <div class="container">
                 <a href="https://github.com/VnceGd/vtuber-hub">

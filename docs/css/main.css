@@ -48,10 +48,8 @@ nav h1 {
     margin: 0;
 }
 nav h1 img {
-    height: 3.5rem;
-}
-#title {
     margin-right: 1rem;
+    height: 3.5rem;
 }
 #logo-text {
     display: none;
@@ -148,18 +146,6 @@ nav h1 img {
     background: var(--bg-col);
     border-radius: 1rem;
 }
-.live-indicator {
-    padding: .5rem 2rem;
-    color: #555;
-    font-size: 1.5rem;
-    border: 1px solid #555;
-    border-radius: 2rem;
-    display: inline-block;
-}
-.live-indicator.active{
-    color: #f00;
-    border-color:#f00;
-}
 
 .list .channel-box {
     margin: 1rem 0;
@@ -183,9 +169,6 @@ nav h1 img {
 .list .channel-icon img {
     margin: 0 1rem 0 0;
     height: 6rem;
-}
-.channel-list .list .live-indicator {
-    margin-right: 1rem;
 }
 
 footer {

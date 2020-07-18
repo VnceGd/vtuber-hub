@@ -1,6 +1,12 @@
 @media screen and (min-width: 425px) {
-    #searchInput {
-        width: auto;
+    nav h1 img {
+        margin-right: 1.5rem;
+    }
+    #title {
+        margin-right: 1rem;
+    }
+    #logo-text {
+        display: inline;
     }
 
     .channel-box {
@@ -13,8 +19,8 @@
     }
 }
 @media screen and (min-width: 768px) {
-    #logo-text {
-        display: inline;
+    #searchInput {
+        width: auto;
     }
 
     .channel-box {

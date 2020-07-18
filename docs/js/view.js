@@ -1,7 +1,7 @@
-const MAX_LENGTH_GRID = 18;
-const MAX_LENGTH_LIST = 100;
+const MAX_LENGTH_GRID = 18
+const MAX_LENGTH_LIST = 100
 
-let listView = false;
+let listView = false
 
 // Return platform associated with group specified by list
 function setPlatform(id) {
@@ -107,5 +107,5 @@ $(document).ready(function() {
             toggleListView();
             listView ? $('#list-view').focus() : $('#grid-view').focus();
         }
-    })
+    });
 });

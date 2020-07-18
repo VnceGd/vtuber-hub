@@ -12,11 +12,11 @@ const Platform = {
 }
 
 // Indicies
-const CHANNEL_ID = 0;
-const CHANNEL_ICON = 1;
-const CHANNEL_NAME = 2;
-const LOCALIZED_NAME = 3;
-const TWITTER_HANDLE = 4;
+const CHANNEL_ID     = 0
+const CHANNEL_ICON   = 1
+const CHANNEL_NAME   = 2
+const LOCALIZED_NAME = 3
+const TWITTER_HANDLE = 4
 
 // Channel information for VTuber groups
 let channelGroups = [
@@ -394,6 +394,7 @@ let channels = [
         ]
     ],
     [ // Nijisanji
+        // First Wave
         [
             "UCD-miitqNY3nyukJ4Fnf4_A",
             "https://yt3.ggpht.com/a/AATXAJzloNyJgJauawF6NcFTYc9U0uG00gwCyK40vlBEtg=s88-c-k-c0xffffffff-no-rj-mo",
@@ -450,6 +451,7 @@ let channels = [
             "Moira",
             "Moiramoimoimoi"
         ],
+        // Second Wave
         [
             "UCt0clH12Xk1-Ej5PXKGfdPA",
             "https://yt3.ggpht.com/a/AATXAJwOlinsLww_3SSI1NgExhGyfYaAak6xkKL0N3lM=s288-c-k-c0xffffffff-no-rj-mo",
@@ -519,6 +521,55 @@ let channels = [
             "文野環【にじさんじの野良猫】ふみのたまき",
             "Fumino Tamaki",
             "nekochan_chu"
+        ],
+        [
+            "UCspv01oxUFf_MTSipURRhkA",
+            "https://yt3.ggpht.com/a/AATXAJwhbaolll7SPpm5gpJwihp6HZRo5rfU-rIbJHDphQ=s288-c-k-c0xffffffff-no-rj-mo",
+            "Kanae Channel",
+            "Kanae",
+            "Kanae_2434"
+        ],
+        [
+            "UCBi8YaVyZpiKWN3_Z0dCTfQ",
+            "https://yt3.ggpht.com/a/AATXAJynncr_ZMztHyMhsBl_IQtFB-BtRRFQEeTXlf4S=s288-c-k-c0xffffffff-no-rj-mo",
+            "赤羽葉子ちゃんねる",
+            "Akabane Youko",
+            "Youko_Akabane"
+        ],
+        [
+            "UCoztvTULBYd3WmStqYeoHcA",
+            "https://yt3.ggpht.com/a/AATXAJzh6YZfmX7oLfb_YGGS0iqp1BwExnqQI0sA_YbZ=s288-c-k-c0xffffffff-no-rj-mo",
+            "笹木咲 / Sasaki Saku",
+            "Sasaki Saku",
+            "saku_sasaki"
+        ],
+        [
+            "UC0g1AE0DOjBYnLhkgoRWN1w",
+            "https://yt3.ggpht.com/a/AATXAJzvU_4zKgbREbRBPzGjq3xZ3KaKBdN1IWSUJi-q=s288-c-k-c0xffffffff-no-rj-mo",
+            "本間ひまわり - Himawari Honma -",
+            "Honma Himawari",
+            "honmahimawari"
+        ],
+        [
+            "UC9EjSJ8pvxtvPdxLOElv73w",
+            "https://yt3.ggpht.com/a/AATXAJxY5OYSsoHGWgCdbqxSykdNoW9uOD_cssADaB7C=s288-c-k-c0xffffffff-no-rj-mo",
+            "魔界ノりりむ",
+            "Makaino Ririmu",
+            "makaino_ririmu"
+        ],
+        [
+            "UCSFCh5NL4qXrAy9u-u2lX3g",
+            "https://yt3.ggpht.com/a/AATXAJxEim2kUs2VRR15KC_9967bzfXcOwWXRFoWwh55=s288-c-k-c0xffffffff-no-rj-mo",
+            "Kuzuha Channel",
+            "Kuzuha",
+            "Vamp_Kuzu"
+        ],
+        [
+            "UC_4tXjqecqox5Uc05ncxpxg",
+            "https://yt3.ggpht.com/a/AATXAJxuBgoaTYEsEtk_ydDJlKPNLCwID4AQ5C9oGrYV=s288-c-k-c0xffffffff-no-rj-mo",
+            "椎名唯華",
+            "Shiina Yuika",
+            "yuika_siina"
         ]
     ]
-];
+]

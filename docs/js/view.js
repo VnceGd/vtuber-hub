@@ -1,5 +1,6 @@
-const MAX_LENGTH_GRID = 18
-const MAX_LENGTH_LIST = 100
+// Platform indices
+const LINK = 0;
+const LOGO = 1;
 
 let listView = false
 
@@ -10,9 +11,9 @@ function setPlatform(id) {
         case VtuberGroup.HOLOLIVE_ID:
         case VtuberGroup.HOLOSTARS:
         case VtuberGroup.NIJISANJI:
-            return Platform.YOUTUBE;
+            return [Platform.YOUTUBE, Logo.YOUTUBE];
         case VtuberGroup.HOLOLIVE_CN:
-            return Platform.BILIBILI;
+            return [Platform.BILIBILI, Logo.BILIBILI];
     }
 }
 
@@ -20,21 +21,27 @@ function setPlatform(id) {
 function createList(list) {
     let channelId = channelGroups[list][CHANNEL_ID];
     let channelName = channelGroups[list][CHANNEL_NAME];
-    let platformLink = setPlatform(channelId);
+    let platform = setPlatform(channelId);
 
     let listTemplate = `
-        <div class="vtuber-group">
-            <a href="${platformLink}${channelId}" target="_blank" rel="noopener">
-                <h1>
-                    <img src="${channelGroups[list][CHANNEL_ICON]}" alt="${channelName}-thumbnail"/>
-                    ${channelName}
-                </h1>
-            </a>
+        <div id="${channelGroups[list][LOCALIZED_NAME]}" class="vtuber-group">
+            <h1>
+                <img class="channel-icon" src="${channelGroups[list][CHANNEL_ICON]}" alt="${channelName}-thumbnail">
+                ${channelName}
+                <a href="${platform[LINK]}${channelId}" target="_blank" rel="noopener">
+                    <img class="link-icon" src="${platform[LOGO]}">
+                </a>
+                <a href="https://twitter.com/${channelGroups[list][TWITTER_HANDLE]}" target="_blank" rel="noopener">
+                    <img class="link-icon" src="${Logo.TWITTER}">
+                </a>
+            </h1>
             <div id="${channelId}-list" class="channel-list"><ul></ul></div>
         </div>
     `;
 
-    $(`#vtuber-groups .container`).append(listTemplate);
+    return new Promise(resolve => {
+        resolve($(`#vtuber-groups .container`).append(listTemplate));
+    });
 }
 
 // Create and append a channel box to channel-list div with id corresponding to channels array index
@@ -43,39 +50,46 @@ function populateList(list, id) {
     let fullName = channels[list][id][CHANNEL_NAME];
     let localizedName = channels[list][id][LOCALIZED_NAME];
     let twitterHandle = channels[list][id][TWITTER_HANDLE];
-    let platformLink = setPlatform(channelGroups[list][CHANNEL_ID]);
+    let platform = setPlatform(channelGroups[list][CHANNEL_ID]);
 
     let channelBoxTemplate = `
         <li class="channel-box">
-            <a href="${platformLink}${channelId}" target="_blank" rel="noopener">
-                <span class="search-term">${fullName}, ${localizedName}, ${twitterHandle}</span>
-                <div class="channel-content">
-                    <div class="channel-icon">
-                        <img src="${channels[list][id][CHANNEL_ICON]}" alt="${fullName}-thumbnail"/>
-                    </div>
-                    <div class="channel-title">
-                        <h3 class="channel-name">${fullName}</h3>
-                        <span class="localized-name">${localizedName}</span>
-                    </div>
+            <span class="search-term">${fullName}, ${localizedName}, ${twitterHandle}</span>
+            <div class="channel-content">
+                <img class="channel-icon" src="${channels[list][id][CHANNEL_ICON]}" alt="${fullName}-thumbnail">
+                <div class="channel-title">
+                    <a href="${platform[LINK]}${channelId}" target="_blank" rel="noopener">
+                        <img class="link-icon" src="${platform[LOGO]}">
+                    </a>
+                    <a href="https://twitter.com/${channelGroups[list][TWITTER_HANDLE]}" target="_blank" rel="noopener">
+                        <img class="link-icon" src="${Logo.TWITTER}">
+                    </a>
+                    <h3 class="channel-name">${fullName}</h3>
+                    <span class="localized-name">${localizedName}</span>
                 </div>
-            </a>
+            </div>
         </li>
     `;
 
     let stringId = `${channelGroups[list][CHANNEL_ID]}-list`;
 
-    $(`#${stringId} ul`).append(channelBoxTemplate);
+    return new Promise(resolve => {
+        resolve($(`#${stringId} ul`).append(channelBoxTemplate));
+    });
 }
 
 // Clear and re-populate the channel-list div
-function refreshList() {
+async function refreshList() {
     $('#vtuber-groups .container').html("");
+
     for (let i = 0; i < channels.length; i++) {
-        createList(i);
+        await createList(i);
         for (let j = 0; j < channels[i].length; j++) {
-            populateList(i, j);
+            await populateList(i, j);
         }
     }
+
+    return;
 }
 
 // Snippet modified from Webdevtrick (https://webdevtrick.com)
@@ -94,12 +108,15 @@ function setDefaultView() {
     if ($(document).width() < 768) {
         toggleListView();
     }
+    else {
+        searchLists(); // For browsers which have input values persist through a refresh
+    }
 }
 
 $(".view a").on('click', toggleListView);
 
-$(document).ready(function() {
-    refreshList();
+$(document).ready(async function() {
+    await refreshList();
     setDefaultView();
 
     $('#grid-view, #list-view').on("keydown", function(e) {

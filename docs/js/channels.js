@@ -1,17 +1,23 @@
 const VtuberGroup = {
-    HOLOLIVE: 'UCJFZiqLMntJufDCHc6bQixg',
+    HOLOLIVE:    'UCJFZiqLMntJufDCHc6bQixg',
     HOLOLIVE_CN: '286700005',
     HOLOLIVE_ID: 'UCfrWoRGlawPQDQxxeIDRP0Q',
-    HOLOSTARS: 'UCWsfcksUUpoEvhia0_ut0bA',
-    NIJISANJI: 'UCX7YkU9nEeaoZbkVLVajcMg'
+    HOLOSTARS:   'UCWsfcksUUpoEvhia0_ut0bA',
+    NIJISANJI:   'UCX7YkU9nEeaoZbkVLVajcMg'
 }
 
 const Platform = {
-    YOUTUBE: 'https://www.youtube.com/channel/',
-    BILIBILI: 'https://space.bilibili.com/'
+    BILIBILI: 'https://space.bilibili.com/',
+    YOUTUBE:  'https://www.youtube.com/channel/'
 }
 
-// Indicies
+const Logo = {
+    BILIBILI: 'img/logo/bilibili-tv.svg',
+    TWITTER:  'img/logo/Twitter_Logo_Blue.svg',
+    YOUTUBE:  'img/logo/yt_icon_rgb.png'
+}
+
+// Channel indices
 const CHANNEL_ID     = 0
 const CHANNEL_ICON   = 1
 const CHANNEL_NAME   = 2
@@ -23,27 +29,37 @@ let channelGroups = [
     [
         VtuberGroup.HOLOLIVE,
         "https://yt3.ggpht.com/a/AATXAJzjWwRdmmhGzuq3bVs7whSPX3piTL7dDR-2Eah0nQ=s88-c-k-c0xffffffff-no-rj-mo",
-        "hololive (ホロライブ)"
+        "hololive (ホロライブ)",
+        "hololive",
+        "hololivetv"
     ],
     [
         VtuberGroup.HOLOLIVE_CN,
         "https://yt3.ggpht.com/a/AATXAJzjWwRdmmhGzuq3bVs7whSPX3piTL7dDR-2Eah0nQ=s88-c-k-c0xffffffff-no-rj-mo",
-        "hololive China"
+        "hololive China",
+        "hololive CN",
+        "hololivetv"
     ],
     [
         VtuberGroup.HOLOLIVE_ID,
         "https://yt3.ggpht.com/a/AATXAJy_etNXRipQSwEIMrTrZfFPh0hfpp2BPhbNxZ1O=s88-c-k-c0xffffffff-no-rj-mo",
-        "hololive Indonesia"
+        "hololive Indonesia",
+        "hololive ID",
+        "hololive_Id"
     ],
     [
         VtuberGroup.HOLOSTARS,
         "https://yt3.ggpht.com/a/AATXAJx7UXk-MNOlacftL_vddK2Bqk1KleKEKrBUp28=s88-c-k-c0xffffffff-no-rj-mo",
-        "holostars (ホロスターズ公式)"
+        "holostars (ホロスターズ公式)",
+        "holostars",
+        "hololivetv"
     ],
     [
         VtuberGroup.NIJISANJI,
         "https://yt3.ggpht.com/a/AATXAJygMFxLVseOFJ3cZRbBNTrK8FdL_K9aFO4nQmx0=s88-c-k-c0xffffffff-no-rj-mo",
-        "Nijisanji (にじさんじ)"
+        "Nijisanji (にじさんじ)",
+        "Nijisanji",
+        "nijisanji_app"
     ]
 ]
 
@@ -454,119 +470,119 @@ let channels = [
         // Second Wave
         [
             "UCt0clH12Xk1-Ej5PXKGfdPA",
-            "https://yt3.ggpht.com/a/AATXAJwOlinsLww_3SSI1NgExhGyfYaAak6xkKL0N3lM=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJwOlinsLww_3SSI1NgExhGyfYaAak6xkKL0N3lM=s88-c-k-c0xffffffff-no-rj-mo",
             "♥️♠️物述有栖♦️♣️",
             "Mononobe Alice",
             "AliceMononobe"
         ],
         [
             "UCXU7YYxy_iQd3ulXyO-zC2w",
-            "https://yt3.ggpht.com/a/AATXAJx3ZOILn-CCqQcHuHrRVhzjsHQoyDMK0AY0jpcuAQ=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJx3ZOILn-CCqQcHuHrRVhzjsHQoyDMK0AY0jpcuAQ=s88-c-k-c0xffffffff-no-rj-mo",
             "伏見ガク【にじさんじ所属】",
             "Fushimi Gaku",
             "gaku_fushimi"
         ],
         [
             "UC_GCs6GARLxEHxy1w40d6VQ",
-            "https://yt3.ggpht.com/a/AATXAJyncBLWfo2XWJWFX1PS7qUBHEbCStbj5PM8fi4H=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJyncBLWfo2XWJWFX1PS7qUBHEbCStbj5PM8fi4H=s88-c-k-c0xffffffff-no-rj-mo",
             "家長むぎ【にじさんじ所属】",
             "Ienaga Mugi",
             "ienaga_mugi23"
         ],
         [
             "UCtpB6Bvhs1Um93ziEDACQ8g",
-            "https://yt3.ggpht.com/a/AATXAJz2OM2EEH03UIjQqSlg4wKyVZQKqaCDEp__ifF5=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJz2OM2EEH03UIjQqSlg4wKyVZQKqaCDEp__ifF5=s88-c-k-c0xffffffff-no-rj-mo",
             "森中花咲",
             "Morinaka Kazaki",
             "KazakiMorinaka"
         ],
         [
             "UCwokZsOK_uEre70XayaFnzA",
-            "https://yt3.ggpht.com/a/AATXAJy3F7Z22UqKUGTmAL3Y6D54N5xNTrB3-Oenb9uk=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJy3F7Z22UqKUGTmAL3Y6D54N5xNTrB3-Oenb9uk=s88-c-k-c0xffffffff-no-rj-mo",
             "鈴鹿詩子 Utako Suzuka",
             "Suzuka Utako",
             "suzukautako"
         ],
         [
             "UCmUjjW5zF1MMOhYUwwwQv9Q",
-            "https://yt3.ggpht.com/a/AATXAJxFgj56cj5A1EQs_tyzC55gL2CSa66-RvVjdR_n=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJxFgj56cj5A1EQs_tyzC55gL2CSa66-RvVjdR_n=s88-c-k-c0xffffffff-no-rj-mo",
             "宇志海いちご",
             "Ushimi Ichigo",
             "ushimi_ichigo"
         ],
         [
             "UC48jH1ul-6HOrcSSfoR02fQ",
-            "https://yt3.ggpht.com/a/AATXAJxzMiZDOJ8UDpxRg98t6GbDZOuGJQMz74IcESiz=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJxzMiZDOJ8UDpxRg98t6GbDZOuGJQMz74IcESiz=s88-c-k-c0xffffffff-no-rj-mo",
             "Yuhi Riri Official",
             "Yuuhi Riri",
             "Yuuhi_Riri"
         ],
         [
             "UCv1fFr156jc65EMiLbaLImw",
-            "https://yt3.ggpht.com/a/AATXAJx3LF3D_djtbBluDXBp2JnWAkGOrOB7TpAVn8f2=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJx3LF3D_djtbBluDXBp2JnWAkGOrOB7TpAVn8f2=s88-c-k-c0xffffffff-no-rj-mo",
             "剣持刀也",
             "Kenmochi Toya",
             "rei_Toya_rei"
         ],
         [
             "UCUzJ90o1EjqUbk2pBAy0_aw",
-            "https://yt3.ggpht.com/a/AATXAJwDh0HUqC1AI-LAtrOv6IXZzoeN0wiJ5NCR6tpWPA=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJwDh0HUqC1AI-LAtrOv6IXZzoeN0wiJ5NCR6tpWPA=s88-c-k-c0xffffffff-no-rj-mo",
             "Gilzaren III Season 2",
             "Gilzaren III",
             "Gilzaren_III"
         ],
         [
             "UCBiqkFJljoxAj10SoP2w2Cg",
-            "https://yt3.ggpht.com/a/AATXAJy1M6jwTNUbi0bjokJFYkGFI7qwUfbZPOvE9jW8=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJy1M6jwTNUbi0bjokJFYkGFI7qwUfbZPOvE9jW8=s88-c-k-c0xffffffff-no-rj-mo",
             "文野環【にじさんじの野良猫】ふみのたまき",
             "Fumino Tamaki",
             "nekochan_chu"
         ],
         [
             "UCspv01oxUFf_MTSipURRhkA",
-            "https://yt3.ggpht.com/a/AATXAJwhbaolll7SPpm5gpJwihp6HZRo5rfU-rIbJHDphQ=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJwhbaolll7SPpm5gpJwihp6HZRo5rfU-rIbJHDphQ=s88-c-k-c0xffffffff-no-rj-mo",
             "Kanae Channel",
             "Kanae",
             "Kanae_2434"
         ],
         [
             "UCBi8YaVyZpiKWN3_Z0dCTfQ",
-            "https://yt3.ggpht.com/a/AATXAJynncr_ZMztHyMhsBl_IQtFB-BtRRFQEeTXlf4S=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJynncr_ZMztHyMhsBl_IQtFB-BtRRFQEeTXlf4S=s88-c-k-c0xffffffff-no-rj-mo",
             "赤羽葉子ちゃんねる",
             "Akabane Youko",
             "Youko_Akabane"
         ],
         [
             "UCoztvTULBYd3WmStqYeoHcA",
-            "https://yt3.ggpht.com/a/AATXAJzh6YZfmX7oLfb_YGGS0iqp1BwExnqQI0sA_YbZ=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJzh6YZfmX7oLfb_YGGS0iqp1BwExnqQI0sA_YbZ=s88-c-k-c0xffffffff-no-rj-mo",
             "笹木咲 / Sasaki Saku",
             "Sasaki Saku",
             "saku_sasaki"
         ],
         [
             "UC0g1AE0DOjBYnLhkgoRWN1w",
-            "https://yt3.ggpht.com/a/AATXAJzvU_4zKgbREbRBPzGjq3xZ3KaKBdN1IWSUJi-q=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJzvU_4zKgbREbRBPzGjq3xZ3KaKBdN1IWSUJi-q=s88-c-k-c0xffffffff-no-rj-mo",
             "本間ひまわり - Himawari Honma -",
             "Honma Himawari",
             "honmahimawari"
         ],
         [
             "UC9EjSJ8pvxtvPdxLOElv73w",
-            "https://yt3.ggpht.com/a/AATXAJxY5OYSsoHGWgCdbqxSykdNoW9uOD_cssADaB7C=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJxY5OYSsoHGWgCdbqxSykdNoW9uOD_cssADaB7C=s88-c-k-c0xffffffff-no-rj-mo",
             "魔界ノりりむ",
             "Makaino Ririmu",
             "makaino_ririmu"
         ],
         [
             "UCSFCh5NL4qXrAy9u-u2lX3g",
-            "https://yt3.ggpht.com/a/AATXAJxEim2kUs2VRR15KC_9967bzfXcOwWXRFoWwh55=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJxEim2kUs2VRR15KC_9967bzfXcOwWXRFoWwh55=s88-c-k-c0xffffffff-no-rj-mo",
             "Kuzuha Channel",
             "Kuzuha",
             "Vamp_Kuzu"
         ],
         [
             "UC_4tXjqecqox5Uc05ncxpxg",
-            "https://yt3.ggpht.com/a/AATXAJxuBgoaTYEsEtk_ydDJlKPNLCwID4AQ5C9oGrYV=s288-c-k-c0xffffffff-no-rj-mo",
+            "https://yt3.ggpht.com/a/AATXAJxuBgoaTYEsEtk_ydDJlKPNLCwID4AQ5C9oGrYV=s88-c-k-c0xffffffff-no-rj-mo",
             "椎名唯華",
             "Shiina Yuika",
             "yuika_siina"

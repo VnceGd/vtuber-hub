@@ -1,6 +1,7 @@
 html {
     font-size: 12px;
     font-family: Roboto, Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;

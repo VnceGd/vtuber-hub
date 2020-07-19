@@ -1,14 +1,4 @@
 @media screen and (min-width: 425px) {
-    nav h1 img {
-        margin-right: 1.5rem;
-    }
-    #title {
-        margin-right: 1rem;
-    }
-    #logo-text {
-        display: inline;
-    }
-
     .channel-box {
         margin: 0 1vw 1vw 0;
         width: 43vw;
@@ -19,10 +9,15 @@
     }
 }
 @media screen and (min-width: 768px) {
-    #search-input {
-        width: auto;
+    nav h1 img {
+        margin-right: 1.5rem;
     }
-
+    #title {
+        margin-right: 1rem;
+    }
+    #logo-text {
+        display: inline;
+    }
     .nav-menu {
         top: .5rem;
         right: 1rem;
@@ -43,6 +38,10 @@
     }
 }
 @media screen and (min-width: 1024px) {
+    #search-input {
+        width: auto;
+    }
+
     .channel-box {
         margin: 0 .5rem .5rem 0;
         width: 19rem;

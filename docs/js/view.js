@@ -63,7 +63,7 @@ function populateList(list, id) {
                     <a href="${platform[LINK]}${channelId}" target="_blank" rel="noopener">
                         <img class="link-icon" src="${platform[LOGO]}" title="${localizedName} Channel">
                     </a>
-                    <a href="https://twitter.com/${channelGroups[list][TWITTER_HANDLE]}" target="_blank" rel="noopener">
+                    <a href="https://twitter.com/${twitterHandle}" target="_blank" rel="noopener">
                         <img class="link-icon" src="${Logo.TWITTER}" title="@${twitterHandle} Twitter">
                     </a>
                     <h3 class="channel-name">${fullName}</h3>

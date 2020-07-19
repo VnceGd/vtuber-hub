@@ -586,6 +586,174 @@ let channels = [
             "椎名唯華",
             "Shiina Yuika",
             "yuika_siina"
+        ],
+        [
+            "UC53UDnhAAYwvNO7j_2Ju1cQ",
+            "https://yt3.ggpht.com/a/AATXAJxxsPjW50rC4DZ2ZtqHz_pUpdFllSNIVNMqqJnQ=s88-c-k-c0xffffffff-no-rj-mo",
+            "ドーラ",
+            "Dola",
+            "___Dola"
+        ],
+        [
+            "UCsFn_ueskBkMCEyzCEqAOvg",
+            "https://yt3.ggpht.com/a/AATXAJzAHg6-0dlu8MnZ0D2yE_i6vt6-vdBIPD-pMtBw=s88-c-k-c0xffffffff-no-rj-mo",
+            "花畑チャイカ",
+            "Hanabatake Chaika",
+            "ZulmIhP1nlMOT5y"
+        ],
+        [
+            "UCLpYMk5h1bq8_GAFVBgXhPQ",
+            "https://yt3.ggpht.com/a/AATXAJx7E2BH56SMw16qDFPghcdGqERYMDc3MbTwt-jMjg=s88-c-k-c0xffffffff-no-rj-mo",
+            "《IzumoKasumi》Project channel【にじさんじ】",
+            "Izumo Kasumi",
+            "ikasumi_zzz"
+        ],
+        [
+            "UC6TfqY40Xt1Y0J-N18c85qQ",
+            "https://yt3.ggpht.com/a/AATXAJx2vm8fB1f59-u42k3mYyiLq8Atc7DJvooumhbDQA=s88-c-k-c0xffffffff-no-rj-mo",
+            "安土桃",
+            "Azuchi Momo",
+            "momo_azuchi_"
+        ],
+        [
+            "UCt5-0i4AVHXaWJrL8Wql3mw",
+            "https://yt3.ggpht.com/a/AATXAJydadq848D6O3cOE0w92BRtYY9dmQDqqwj9A_zB_g=s88-c-k-c0xffffffff-no-rj-mo",
+            "緑仙channel",
+            "Ryushen",
+            "midori_2434"
+        ],
+        [
+            "UC1zFJrfEKvCixhsjNSb1toQ",
+            "https://yt3.ggpht.com/a/AATXAJxBZFKjuz2EvXj5ewwjFN9DudWuMMWvyfYWu3ZciQ=s88-c-k-c0xffffffff-no-rj-mo",
+            "シスター・クレア -SisterClaire-",
+            "Sister Cleaire",
+            "SisterCleaire"
+        ],
+        [
+            "UCryOPk2GZ1meIDt53tL30Tw",
+            "https://yt3.ggpht.com/a/AATXAJzsp_XXHHY4aDjTWy7MTVV0RvdDiYjXuVS7e5Fj=s88-c-k-c0xffffffff-no-rj-mo",
+            "Masaru Suzuki/Nijisanji",
+            "Suzuki Masaru",
+            "darkness_eater"
+        ],
+        [
+            "UCRV9d6YCYIMUszK-83TwxVA",
+            "https://yt3.ggpht.com/a/AATXAJwelZdYgMqCFHZC6At8GfAknZVjDx0-7TZ-KyTK=s88-c-k-c0xffffffff-no-rj-mo",
+            " 轟京子/kyoko todoroki【にじさんじ】 ",
+            "Todoroki Kyoko",
+            "KT_seeds"
+        ],
+        [
+            "UC3lNFeJiTq6L3UWoz4g1e-A",
+            "https://yt3.ggpht.com/a/AATXAJxlv2rzHI0bDZrESIqdMwTASQYrvnZN0I5AseOK=s88-c-k-c0xffffffff-no-rj-mo",
+            "卯月コウ",
+            "Uzuki Kou",
+            "udukikohh"
+        ],
+        [
+            "UCKMYISTJAQ8xTplUPHiABlA",
+            "https://yt3.ggpht.com/a/AATXAJzFeWF6piUOmDpvCvQ1bf4-DOiGDCX5A3CAFKk5=s88-c-k-c0xffffffff-no-rj-mo",
+            "社築",
+            "Yashiro Kizuku",
+            "846kizuQ"
+        ],
+        [
+            "UCWz0CSYCxf4MhRKPDm220AQ",
+            "https://yt3.ggpht.com/a/AATXAJzHqC3FHPjH6FVWg1nPx5W-mfUEgPBZKnCo5jft=s88-c-k-c0xffffffff-no-rj-mo",
+            "【にじさんじ】神田笑一",
+            "Kanda Shoichi",
+            "Kanda_Shoichi"
+        ],
+        [
+            "UCRWOdwLRsenx2jLaiCAIU4A",
+            "https://yt3.ggpht.com/a/AATXAJxJHh2XS6GfI9d9QNQNAMj6epYjEBcidoZ-CY6b=s88-c-k-c0xffffffff-no-rj-mo",
+            "雨森小夜",
+            "Amemori Sayo",
+            "Sayo_Amemori"
+        ],
+        [
+            "UCV5ZZlLjk5MKGg3L0n0vbzw",
+            "https://yt3.ggpht.com/a/AATXAJxpBPvANSbruT65gnx3V6WeKIqXVnKOJPDV_sKq=s88-c-k-c0xffffffff-no-rj-mo",
+            "鷹宮リオン",
+            "Takamiya Rion",
+            "TakamiyaRion"
+        ],
+        [
+            "UCiSRx1a2k-0tOg-fs6gAolQ",
+            "https://yt3.ggpht.com/a/AATXAJyGqLCNvqDHqJfpQWaFnVdvT_A3mf0_mmGw1e_p=s88-c-k-c0xffffffff-no-rj-mo",
+            "飛鳥ひな【にじさんじ所属】",
+            "Asuka Hina",
+            "hina__asuka"
+        ],
+        [
+            "UCJubINhCcFXlsBwnHp0wl_g",
+            "https://yt3.ggpht.com/a/AATXAJyL4OetUAZ5QDJAKTXJyZGSe-MOi6iQsdQdNG9f=s88-c-k-c0xffffffff-no-rj-mo",
+            "舞元啓介",
+            "Maimoto Keisuke",
+            "maimoto_k"
+        ],
+        [
+            "UCjlmCrq4TP1I4xguOtJ-31w",
+            "https://yt3.ggpht.com/a/AATXAJxANfqBD_ToddsIqeTwWwU5DbGtiBemckOB3Osf=s88-c-k-c0xffffffff-no-rj-mo",
+            "でびでび・でびる",
+            "Debidebi Debiru",
+            "debidebiru_sama"
+        ],
+        [
+            "UCPvGypSgfDkVe7JG2KygK7A",
+            "https://yt3.ggpht.com/a/AATXAJxWuVy-BIgr9mjrngx1cCgSE35w2eU8FpH_cKGJ=s88-c-k-c0xffffffff-no-rj-mo",
+            "竜胆 尊 / Rindou Mikoto",
+            "Rindou Mikoto",
+            "RindouMikoto"
+        ],
+        [
+            "UChUJbHiTVeGrSkTdBzVfNCQ",
+            "https://yt3.ggpht.com/a/AATXAJxwaS1j8KDIVcaF5mLaMsCYAfBytM5nUnoZMnlv=s88-c-k-c0xffffffff-no-rj-mo",
+            "ジョー・力一 Joe Rikiichi",
+            "Joe Rikiichi",
+            "JoeRikiichi"
+        ],
+        [
+            "UCo7TRj3cS-f_1D9ZDmuTsjw",
+            "https://yt3.ggpht.com/a/AATXAJwVdcLG6hh-ITNCfeNb60yX35mWAo57o9FT4b6C=s88-c-k-c0xffffffff-no-rj-mo",
+            "町田ちま【にじさんじ】",
+            "Machita Chima",
+            "chima_machita23"
+        ],
+        [
+            "UCfQVs_KuXeNAlGa3fb8rlnQ",
+            "https://yt3.ggpht.com/a/AATXAJxoAd1g6arV51vxFfSs0pCzSUxazJu1-97C2UiB=s88-c-k-c0xffffffff-no-rj-mo",
+            "桜凛月",
+            "Sakura Ritsuki",
+            "SAKURA_RITSUKI"
+        ],
+        [
+            "UCbc8fwhdUNlqi-J99ISYu4A",
+            "https://yt3.ggpht.com/a/AATXAJz4qdKcLeJr_yYnF9Grz2CDkVdRM-PifyTfUQ2c=s88-c-k-c0xffffffff-no-rj-mo",
+            "ベルモンド・バンデラス",
+            "Belmond Banderas",
+            "belmond_b_2434"
+        ],
+        [
+            "UCvzVB-EYuHFXHZrObB8a_Og",
+            "https://yt3.ggpht.com/a/AATXAJxv6IVrX_gHuMXMmV9RaYa0Es8Q3GSf8syT8jO9=s88-c-k-c0xffffffff-no-rj-mo",
+            "矢車りね - Rine Yaguruma -",
+            "Yaguruma Rine",
+            "Rine_Yaguruma"
+        ],
+        [
+            "UCTIE7LM5X15NVugV7Krp9Hw",
+            "https://yt3.ggpht.com/a/AATXAJzZfLxXfgKZsSTMLbmSCX0xLMn_rNxo31RHJCP4=s88-c-k-c0xffffffff-no-rj-mo",
+            "夢追翔のJUKE BOX",
+            "Yumeoi Kakeru",
+            "kakeru_yumeoi"
+        ],
+        [
+            "UCmeyo5pRj_6PXG-CsGUuWWg",
+            "https://yt3.ggpht.com/a/AATXAJwiOdXY5EBW5UjOnkngayu2G4IpB9BBROJCVCF9=s88-c-k-c0xffffffff-no-rj-mo",
+            "黒井しば【にじさんじの犬】",
+            "Kuroi Shiba",
+            "BlackShiba_chan"
         ]
     ]
 ]

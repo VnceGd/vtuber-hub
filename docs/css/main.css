@@ -30,10 +30,10 @@ img {
 
 .container {
     margin: 1rem 2rem;
-    padding-top: 6rem;
 }
 
 .vtuber-group {
+    padding-top: 6rem;
     overflow: auto;
 }
 .vtuber-group .channel-icon {

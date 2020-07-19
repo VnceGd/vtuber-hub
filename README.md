@@ -12,7 +12,7 @@ A website which makes use of [YouTube Data API v3](https://developers.google.com
 * [hololive China](https://space.bilibili.com/286700005) **There is no official hololive CN channel on YouTube; this is a link to hololive's bilibili channel*
 * [hololive Indonesia](https://www.youtube.com/channel/UCfrWoRGlawPQDQxxeIDRP0Q)
 * [holostars](https://www.youtube.com/channel/UCWsfcksUUpoEvhia0_ut0bA)
-* [Nijisanji](https://www.youtube.com/channel/UCX7YkU9nEeaoZbkVLVajcMg) **Currently only First and Second Wave listed*
+* [Nijisanji](https://www.youtube.com/channel/UCX7YkU9nEeaoZbkVLVajcMg)
 
 ## [Communities](communities)
 

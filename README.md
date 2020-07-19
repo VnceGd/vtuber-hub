@@ -1,4 +1,4 @@
-<img width="100" src="./docs/img/logo.svg">
+<img width="100" src="./docs/img/logo/vtuber-hub.svg">
 
 # VTuber Hub
 

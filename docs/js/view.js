@@ -21,18 +21,20 @@ function setPlatform(id) {
 function createList(list) {
     let channelId = channelGroups[list][CHANNEL_ID];
     let channelName = channelGroups[list][CHANNEL_NAME];
+    let localizedName = channelGroups[list][LOCALIZED_NAME];
+    let twitterHandle = channelGroups[list][TWITTER_HANDLE];
     let platform = setPlatform(channelId);
 
     let listTemplate = `
-        <div id="${channelGroups[list][LOCALIZED_NAME]}" class="vtuber-group">
-            <h1>
+        <div class="vtuber-group">
+            <h1 id="${localizedName}">
                 <img class="channel-icon" src="${channelGroups[list][CHANNEL_ICON]}" alt="${channelName}-thumbnail">
                 ${channelName}
                 <a href="${platform[LINK]}${channelId}" target="_blank" rel="noopener">
-                    <img class="link-icon" src="${platform[LOGO]}">
+                    <img class="link-icon" src="${platform[LOGO]}" title="${localizedName} Channel">
                 </a>
-                <a href="https://twitter.com/${channelGroups[list][TWITTER_HANDLE]}" target="_blank" rel="noopener">
-                    <img class="link-icon" src="${Logo.TWITTER}">
+                <a href="https://twitter.com/${twitterHandle}" target="_blank" rel="noopener">
+                    <img class="link-icon" src="${Logo.TWITTER}" title="@${twitterHandle} Twitter">
                 </a>
             </h1>
             <div id="${channelId}-list" class="channel-list"><ul></ul></div>
@@ -59,10 +61,10 @@ function populateList(list, id) {
                 <img class="channel-icon" src="${channels[list][id][CHANNEL_ICON]}" alt="${fullName}-thumbnail">
                 <div class="channel-title">
                     <a href="${platform[LINK]}${channelId}" target="_blank" rel="noopener">
-                        <img class="link-icon" src="${platform[LOGO]}">
+                        <img class="link-icon" src="${platform[LOGO]}" title="${localizedName} Channel">
                     </a>
                     <a href="https://twitter.com/${channelGroups[list][TWITTER_HANDLE]}" target="_blank" rel="noopener">
-                        <img class="link-icon" src="${Logo.TWITTER}">
+                        <img class="link-icon" src="${Logo.TWITTER}" title="@${twitterHandle} Twitter">
                     </a>
                     <h3 class="channel-name">${fullName}</h3>
                     <span class="localized-name">${localizedName}</span>

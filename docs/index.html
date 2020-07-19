@@ -9,21 +9,23 @@
 
         <title>VTuber Hub</title>
 
-        <link rel="icon" href="img/logo.svg">
+        <link rel="icon" href="img/logo/vtuber-hub.svg">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/theme.css">
+        <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/screen.css">
+        <link rel="stylesheet" href="css/theme.css">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
         <script src="js/channels.js"></script>
         <script src="js/search.js"></script>
         <script src="js/view.js" defer></script>
+        <script src="js/nav.js" defer></script>
     </head>
     <body>
         <nav>
             <h1>
                 <a id="title" href="">
-                    <img src="img/logo.svg" alt="VTuber Hub Logo"/><span id="logo-text">VTuber Hub</span>
+                    <img src="img/logo/vtuber-hub.svg" alt="VTuber Hub Logo"/><span id="logo-text">VTuber Hub</span>
                 </a>
                 <div class="view">
                     <a id="grid-view" tabindex="0">
@@ -49,8 +51,23 @@
                         </svg>
                     </a>
                 </div>
-                <input type="text" id="searchInput" onkeyup="searchLists()" placeholder="Search" aria-label="Search">
+                <label for="search-input">
+                    <svg id="search-icon" viewBox="0 0 1 1" aria-label="search-icon">
+                        <g stroke="var(--text-col)" stroke-width=".2" transform="translate(0 -.125)">
+                            <circle cx=".5" cy=".5" r=".25"/>
+                            <path d="M.6 .7 .8 1"/>
+                        </g>
+                    </svg>
+                </label>
+                <input type="text" id="search-input" onkeyup="searchLists()" placeholder="Search" aria-label="Search">
             </h1>
+            <div class="nav-menu">
+                <button id="dropdown-btn" onclick="toggleNavDropdown()">
+                    <svg id="dropdown-icon" viewBox="0 0 1 1" aria-label="dropdown-icon">
+                        <path fill="var(--text-col)" d="M0 .25 1 .25 .5 1"/>
+                    </svg>
+                </button>
+            </div>
         </nav>
         <main>
             <section id="vtuber-groups">
@@ -62,8 +79,8 @@
         <footer>
             <div class="container">
                 <a href="https://github.com/VnceGd/vtuber-hub">
-                    <img id="github-mark-dark" src="img/github-dark.png" alt="Github Logo"/>
-                    <img id="github-mark-light" src="img/github-light.png" alt="Github Logo"/>
+                    <img id="github-mark-dark" src="img/logo/github-dark.png" alt="Github Logo"/>
+                    <img id="github-mark-light" src="img/logo/github-light.png" alt="Github Logo"/>
                 </a>
                 <br>
                 <p>Copyright (c) 2020 VnceGd <a href="https://github.com/VnceGd/vtuber-hub/blob/master/LICENSE"> MIT License</a></p>

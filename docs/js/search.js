@@ -2,7 +2,7 @@
 function searchLists() {
     let input, filter, groups, gr;
 
-    input = $('#searchInput')[0];
+    input = $('#search-input')[0];
     filter = input.value.toUpperCase();
     groups = $('.vtuber-group');
 
